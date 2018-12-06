@@ -13,3 +13,18 @@ SOFIA performed far-infrared imaging polarimetric observations of [30 Doradus](h
 The notebook can be downloaded from the repository above, or rendered online at:
 
 https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_30Dor.ipynb
+
+## [FORCAST Grism: Inspection and Assessment Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_Inspection.ipynb)
+
+This recipe provides an overview and sample code (in Python) for plotting and assessing FORCAST grism data.  
+Contents:
+- Reading the File and Loading the Data into a Table Structure
+- Plotting Spectra
+- Masking Regions with Strong Telluric Features
+- Plotting the Complete SED
+- Dealing with Slit Misalignment Losses
+- Converting to λFλ
+
+The notebook can be downloaded from the repository above, or rendered online at:
+
+https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_Inspection.ipynb
