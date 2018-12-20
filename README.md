@@ -18,11 +18,12 @@ https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_30
 
 This recipe provides an overview and sample code (in Python) for plotting and assessing FORCAST grism data.  
 Contents:
+- Viewing the FITS header
 - Reading the File and Loading the Data into a Table Structure
 - Plotting Spectra
 - Masking Regions with Strong Telluric Features
 - Plotting the Complete SED
-- Dealing with Slit Misalignment Losses
+- Calibration Using Independant Photometry
 - Converting to λFλ
 
 The notebook can be downloaded from the repository above, or rendered online at:
@@ -39,3 +40,16 @@ Contents:
 The notebook can be downloaded from the repository above, or rendered online at:
 
 https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_CustomExtraction.ipynb
+
+## [FORCAST Grism: Basic Line Analysis](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_CustomExtraction.ipynb)
+
+This recipe provides an overview and sample python code for basic spectral (emission) line analysis. We recommend that the user reviews the first FORCAST Grism Recipe (FORCAST Grism Recipe: Basic Inspection and Assessment) before proceeding with this slightly more advanced tutorial.  
+Contents:
+- Cleaning the Data
+- Fitting the Continuum Across the Grism
+- Measuring Line Flux
+- Line Fitting
+
+The notebook can be downloaded from the repository above, or rendered online at:
+
+https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_LineAnalysis.ipynb
