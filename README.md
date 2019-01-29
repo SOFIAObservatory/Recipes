@@ -19,6 +19,7 @@ https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_30
 This recipe provides an overview and sample code (in Python) for plotting and assessing FORCAST grism data.  
 Contents:
 - Viewing the FITS header
+- Slit Orientation on the Sky
 - Reading the File and Loading the Data into a Table Structure
 - Plotting Spectra
 - Masking Regions with Strong Telluric Features
