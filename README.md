@@ -14,6 +14,18 @@ The notebook can be downloaded from the repository above, or rendered online at:
 
 https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_30Dor.ipynb
 
+## [FORCAST: Basic Photometry](LINK TBD)
+
+This cookbook describes the basic process for aperture photometry using Level 3 (flux calibrated) FORCAST images. 
+Contents:
+- INTRODUCTION & INGREDIENTS
+- INSPECTING THE IMAGE
+- APERTURE PHOTOMETRY
+- COLOR CORRECTION
+- FORCAST PSF FITTING
+- CROWDED FIELDS AND BACKGROUND EMISSION
+
+
 ## [FORCAST Grism: Inspection and Assessment Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_Inspection.ipynb)
 
 This recipe provides an overview and sample code (in Python) for plotting and assessing FORCAST grism data.  
@@ -54,3 +66,23 @@ Contents:
 The notebook can be downloaded from the repository above, or rendered online at:
 
 https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_LineAnalysis.ipynb
+
+
+## [FIFI-LS: Basic Cube Analysis using SOSPEX](LINK TBD)
+
+This data analysis recipe describes basic spectroscopic cube analysis using the SOFIA
+SPecturm Explorer (SOSPEX), a python tool written and maintained at the SOFIA
+Science Center by FIFI-LS pipeline scientist Dr. Dario Fadda (https://github.com/SOFIAObservatory/sospex).
+Contents:
+- INTRODUCTION & INGREDIENTS
+- INSPECTING THE CUBE
+- COMPARING TO A REFERENCE IMAGE
+- REFERENCE VELOCITY AND REDSHIFT
+- TRIMMING, CROPPING, AND MASKING
+- WORKING WITH APERTURES
+- FITTING THE CONTINUUM
+- CALCULATING LINE INTENSITY AND VELOCITY MOMENTS
+
+## [GREAT: How to view GREAT spectra using CLASS](LINK TBD)
+
+This recipe is a beginner’s introduction to plotting GREAT spectra using the class utility, which is part of the GILDAS package developed by IRAM and now the standard for single-dish heterodyne spectroscopy data reduction. 
