@@ -2,7 +2,7 @@
 
 These documents provide simple "recipes" (i.e., descriptions and guided examples) for common data analysis objectives using SOFIA processed data. They are generally written for a graduate student audience and are intended to be used with the [SOFIA Data Handbooks](https://www.sofia.usra.edu/science/proposing-and-observing/data-products/data-resources).
 
-The recipes are all `jupyter` notebooks designed for a researcher with a working knowledge of the [numpy/scipy/matplotlib stack](https://scipy.org/install.html) as well the [astropy](http://docs.astropy.org/en/stable/) modules.
+Some of the recipes are `jupyter` notebooks designed for a researcher with a working knowledge of the [numpy/scipy/matplotlib stack](https://scipy.org/install.html) as well the [astropy](http://docs.astropy.org/en/stable/) modules.
 
 The first notebook in the series walks the user through using the [SOFIA Data Cycle System (DCS)](https://dcs.sofia.usra.edu/) and will guide the reader through downloading a public data set on 30 Doradus with a walkthrough of basic analysis techniques with `python`.
 
@@ -18,12 +18,13 @@ https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_30
 
 This cookbook describes the basic process for aperture photometry using Level 3 (flux calibrated) FORCAST images. 
 Contents:
-- INTRODUCTION & INGREDIENTS
-- INSPECTING THE IMAGE
-- APERTURE PHOTOMETRY
-- COLOR CORRECTION
-- FORCAST PSF FITTING
-- CROWDED FIELDS AND BACKGROUND EMISSION
+- Introduction & Ingredients
+- Inspecting the Image
+- Aperture Photometry
+- Color Correction
+- FORCAST PSF Fitting
+- Crowded Fields and Background Emission
+
 
 
 ## [FORCAST Grism: Inspection and Assessment Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_Inspection.ipynb)
@@ -74,14 +75,14 @@ This data analysis recipe describes basic spectroscopic cube analysis using the 
 SPecturm Explorer (SOSPEX), a python tool written and maintained at the SOFIA
 Science Center by FIFI-LS pipeline scientist Dr. Dario Fadda (https://github.com/SOFIAObservatory/sospex).
 Contents:
-- INTRODUCTION & INGREDIENTS
-- INSPECTING THE CUBE
-- COMPARING TO A REFERENCE IMAGE
-- REFERENCE VELOCITY AND REDSHIFT
-- TRIMMING, CROPPING, AND MASKING
-- WORKING WITH APERTURES
-- FITTING THE CONTINUUM
-- CALCULATING LINE INTENSITY AND VELOCITY MOMENTS
+- Introduction & Ingredients
+- Inspecting the Cube
+- Comparing to a Reference Image
+- Reference Velocity and Redshift
+- Trimming, Cropping, and Masking
+- Working With Apertures
+- Fitting the Continuum
+- Calculating Line Intensity and Velocity Moments
 
 ## [GREAT: How to view GREAT spectra using CLASS](LINK TBD)
 
