@@ -55,7 +55,7 @@ The notebook can be downloaded from the repository above, or rendered online at:
 
 https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST_Grism-CustomExtraction.ipynb
 
-## [FORCAST Grism: Basic Line Analysis](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_rism-LineAnalysis.ipynb)
+## [FORCAST Grism: Basic Line Analysis](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Grism-LineAnalysis.ipynb)
 
 This recipe provides an overview and sample python code for basic spectral (emission) line analysis. We recommend that the user reviews the first FORCAST Grism Recipe (FORCAST Grism Recipe: Basic Inspection and Assessment) before proceeding with this slightly more advanced tutorial.  
 Contents:
