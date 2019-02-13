@@ -4,7 +4,7 @@ These documents provide simple "recipes" (i.e., descriptions and guided examples
 
 Some of the recipes are `jupyter` notebooks designed for a researcher with a working knowledge of the [numpy/scipy/matplotlib stack](https://scipy.org/install.html) as well the [astropy](http://docs.astropy.org/en/stable/) modules.
 
-The first notebook in the series walks the user through using the [SOFIA Data Cycle System (DCS)](https://dcs.sofia.usra.edu/) and will guide the reader through downloading a public data set on 30 Doradus with a walkthrough of basic analysis techniques with `python`.
+The first notebook in the series (30 Dor/HAWC+) walks the user through using the [SOFIA Data Cycle System (DCS)](https://dcs.sofia.usra.edu/) and will guide the reader through downloading a public data set on 30 Doradus with a walkthrough of basic analysis techniques with `python`.
 
 ## [30 Doradus/HAWC+ Cookbook](https://github.com/SOFIAObservatory/Recipes/blob/master/HAWC_30Dor.ipynb)
 
