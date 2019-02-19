@@ -27,7 +27,7 @@ Contents:
 
 
 
-## [FORCAST Grism: Inspection and Assessment Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Grism-Inspection.ipynb)
+## [FORCAST Grism: Inspection and Assessment Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_Inspection.ipynb)
 
 This recipe provides an overview and sample code (in Python) for plotting and assessing FORCAST grism data.  
 Contents:
@@ -42,9 +42,9 @@ Contents:
 
 The notebook can be downloaded from the repository above, or rendered online at:
 
-https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST_Grism-Inspection.ipynb
+https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_Inspection.ipynb
 
-## [FORCAST Grism: Custom Extraction Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Grism-CustomExtraction.ipynb)
+## [FORCAST Grism: Custom Extraction Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_CustomExtraction.ipynb)
 
 This recipe provides an overview and sample code (in Python) for custom spectral extractions from the LEVEL_2 2-D rectified images produced by the FORCAST pipeline. We recommend that the user reviews the first FORCAST Grism Recipe (FORCAST Grism Recipe: Basic Inspection and Assessment) before proceeding with this slightly more advanced tutorial.  
 Contents:
@@ -53,9 +53,9 @@ Contents:
 
 The notebook can be downloaded from the repository above, or rendered online at:
 
-https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST_Grism-CustomExtraction.ipynb
+https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_CustomExtraction.ipynb
 
-## [FORCAST Grism: Basic Line Analysis](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Grism-LineAnalysis.ipynb)
+## [FORCAST Grism: Basic Line Analysis](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_LineAnalysis.ipynb)
 
 This recipe provides an overview and sample python code for basic spectral (emission) line analysis. We recommend that the user reviews the first FORCAST Grism Recipe (FORCAST Grism Recipe: Basic Inspection and Assessment) before proceeding with this slightly more advanced tutorial.  
 Contents:
@@ -66,7 +66,7 @@ Contents:
 
 The notebook can be downloaded from the repository above, or rendered online at:
 
-https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST_Grism-LineAnalysis.ipynb
+https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_LineAnalysis.ipynb
 
 
 ## [FIFI-LS: Basic Cube Analysis using SOSPEX](https://github.com/SOFIAObservatory/Recipes/blob/master/FIFI-LS_CubeAnalysis.pdf)
