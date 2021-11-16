@@ -4,7 +4,7 @@ These documents provide simple "recipes" (i.e., descriptions and guided examples
 
 Some of the recipes are `jupyter` notebooks designed for a researcher with a working knowledge of the [numpy/scipy/matplotlib stack](https://scipy.org/install.html) as well the [astropy](http://docs.astropy.org/en/stable/) modules.
 
-The first notebook in the series (30 Dor/HAWC+) walks the user through using the [SOFIA Data Cycle System (DCS)](https://dcs.sofia.usra.edu/) and will guide the reader through downloading a public data set on 30 Doradus with a walkthrough of basic analysis techniques with `python`.
+The first notebook in the series (30 Dor/HAWC+) walks the user through downloading SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html)) and demonstrates basic analysis techniques with `python` using a public data set on 30 Doradus.
 
 ## [30 Doradus/HAWC+ Recipe](https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_30Dor.ipynb)
 
@@ -16,7 +16,7 @@ https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_30
 
 ## [FORCAST: Basic Photometry](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Photometry.pdf)
 
-This cookbook describes the basic process for aperture photometry using Level 3 (flux calibrated) FORCAST images. 
+This cookbook describes the basic process for aperture photometry using Level 3 (flux calibrated) FORCAST images.
 Contents:
 - Introduction & Ingredients
 - Inspecting the Image
@@ -86,4 +86,4 @@ Contents:
 
 ## [GREAT: How to view GREAT spectra using CLASS](https://github.com/SOFIAObservatory/Recipes/blob/master/GREAT_CLASSPrimer.pdf)
 
-This recipe is a beginner’s introduction to plotting GREAT spectra using the class utility, which is part of the GILDAS package developed by IRAM and now the standard for single-dish heterodyne spectroscopy data reduction. 
+This recipe is a beginner’s introduction to plotting GREAT spectra using the class utility, which is part of the GILDAS package developed by IRAM and now the standard for single-dish heterodyne spectroscopy data reduction.
