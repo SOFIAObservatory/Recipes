@@ -1,0 +1,3 @@
+aplpy
+specutils
+nbmake=0.5
