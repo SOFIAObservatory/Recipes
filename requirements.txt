@@ -1,3 +1,4 @@
 aplpy
 specutils
 nbmake==0.5
+pytest-check-links
