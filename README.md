@@ -8,13 +8,13 @@ Some of the recipes are `jupyter` notebooks designed for a researcher with a wor
 
 The first notebook in the series (30 Dor/HAWC+) walks the user through downloading SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html)) and demonstrates basic analysis techniques with `python` using a public data set on 30 Doradus.
 
-## [30 Doradus/HAWC+ Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/HAWC%2B_v1.1/HAWC_30Dor.ipynb)
+## [30 Doradus/HAWC+ Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/HAWC_v1.2/HAWC_30Dor.ipynb)
 
 SOFIA performed far-infrared imaging polarimetric observations of [30 Doradus](https://www.sofia.usra.edu/multimedia/science-results-archive/sofia-reveals-never-seen-magnetic-field-details) using the High-resolution Airborne Wideband Camera-plus (HAWC+) at 53, 89, 154, and 214 micron. We present the status and quality of the observations, an overview of the SOFIA data products, and examples of working with HAWC+ polarimetric data that will enhance the scientific analysis of this, and future, data sets. These observations illustrate the potential influence of magnetic fields and turbulence in a star-forming region within the Tarantula Nebula.
 
 The notebook can be downloaded from the repository above, or rendered online at:
 
-https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_30Dor.ipynb
+https://nbviewer.org/github/SOFIAObservatory/Recipes/blob/master/HAWC_v1.2/HAWC_30Dor.ipynb
 
 ## [FORCAST: Basic Photometry](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Photometry.pdf)
 
@@ -44,8 +44,7 @@ Contents:
 
 The notebook can be downloaded from the repository above, or rendered online at:
 
-https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_Inspection.ipynb
-
+https://nbviewer.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
 ## [FORCAST Grism: Basic Line Analysis](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_LineAnalysis-2.ipynb)
 
 This recipe provides an overview and sample python code for basic spectral (emission) line analysis. We recommend that the user reviews the first FORCAST Grism Recipe (FORCAST Grism Recipe: Basic Inspection and Assessment) before proceeding with this slightly more advanced tutorial.  
@@ -57,7 +56,7 @@ Contents:
 
 The notebook can be downloaded from the repository above, or rendered online at:
 
-https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_LineAnalysis.ipynb
+https://nbviewer.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_LineAnalysis-2.ipynb
 
 ## [FORCAST Grism: Custom Extraction Recipe](https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_CustomExtraction-3.ipynb)
 
@@ -68,7 +67,7 @@ Contents:
 
 The notebook can be downloaded from the repository above, or rendered online at:
 
-https://nbviewer.jupyter.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST-Grism_CustomExtraction.ipynb
+https://nbviewer.org/github/SOFIAObservatory/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_CustomExtraction-3.ipynb
 
 ## [FIFI-LS: Basic Cube Analysis using SOSPEX](https://github.com/SOFIAObservatory/Recipes/blob/master/FIFI-LS_CubeAnalysis.pdf)
 
