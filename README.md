@@ -13,8 +13,8 @@ Some of the recipes are `jupyter` notebooks designed for a researcher with a wor
 
 | Notebook | Description |
 | :--- | :---  |
-| [SOFIA: data retrieval][isra_notebook] | <span style="color:#970505;">Aim</span>: Download SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html))<br /> <span style="color:#970505;">Data</span>: 30 Doradus public dataset <br /> <span style="color:#970505;">Tools</span>: astropy|
-| [FORCAST: Basic Photometry][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [SOFIA: data retrieval][isra_notebook] | <span style="color:#970505;">Aim</span>: Download SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html))<br /> |
+| [FORCAST: Basic Photometry][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Simple aperture photometry and uncertainty calculation. <br /> <span style="color:#970505;">Data</span>: Symbiotic Mira, HM Sge <br /> <span style="color:#970505;">Tools</span>: astropy, photutils |
 | [FORCAST: Grism Inspection][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FORCAST: Grism Line Analysis][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FORCAST: Grism Custom Extraction][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
