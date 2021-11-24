@@ -1,5 +1,7 @@
 # SOFIA Example Jupyter Notebooks -- Data Analysis Tools
 
+[repo]:s-goldman
+
 [![Python package](https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg)](https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml)
 
 These documents provide simple "recipes" (i.e., descriptions and guided examples) for common data analysis objectives using SOFIA processed data. They are generally written for a graduate student audience and are intended to be used with the [SOFIA Data Handbooks](https://www.sofia.usra.edu/science/proposing-and-observing/data-products/data-resources).
@@ -27,5 +29,5 @@ Some of the recipes are `jupyter` notebooks designed for a researcher with a wor
 
 <!--  <span style="color:#970505;">Data</span>: 30 Doradus  -->
 
-[isra_notebook]:https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
-[forcast_notebook]:https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
+[isra_notebook]:/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
+[forcast_notebook]:/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
