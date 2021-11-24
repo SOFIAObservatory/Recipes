@@ -29,5 +29,5 @@ Some of the recipes are `jupyter` notebooks designed for a researcher with a wor
 
 <!--  <span style="color:#970505;">Data</span>: 30 Doradus  -->
 
-[isra_notebook]:/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
+[isra_notebook]:requirements.txt
 [forcast_notebook]:/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
