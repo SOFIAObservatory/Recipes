@@ -13,8 +13,8 @@ Some of the recipes are `jupyter` notebooks designed for a researcher with a wor
 
 | Notebook | Description |
 | :--- | :---  |
-| [SOFIA: data retrieval][isra_notebook] | <span style="color:#970505;">Aim</span>: Download SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html))<br /> |
-| [FORCAST: Basic Photometry][forcast_photometry_notebook] |  <span style="color:#970505;">Aim</span>: Simple aperture photometry and uncertainty calculation. <br /> <span style="color:#970505;">Data</span>: Symbiotic Mira, HM Sge <br /> <span style="color:#970505;">Tools</span>: astropy, photutils |
+| [SOFIA: data retrieval][isra_nb] | <span style="color:#970505;">Aim</span>: Download SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html))<br /> |
+| [FORCAST: Basic Photometry][forcast_photometry_nb] |  <span style="color:#970505;">Aim</span>: Simple aperture photometry and uncertainty calculation. <br /> <span style="color:#970505;">Data</span>: Symbiotic Mira, HM Sge <br /> <span style="color:#970505;">Tools</span>: astropy, photutils |
 | [FORCAST: Grism Inspection][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FORCAST: Grism Line Analysis][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FORCAST: Grism Custom Extraction][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
@@ -29,6 +29,15 @@ Some of the recipes are `jupyter` notebooks designed for a researcher with a wor
 
 <!--  <span style="color:#970505;">Data</span>: 30 Doradus  -->
 
-[isra_notebook]:https://github.com/s-goldman/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
-[forcast_photometry_notebook]:https://github.com/s-goldman/Recipes/blob/main/FORCAST_v1.1/FORCAST-basic_photometry.ipynb
+[isra_nb]:https://github.com/s-goldman/Recipes/blob/master/FORCAST/FORCAST-Grism_Inspection-1.ipynb
+[forcast_photometry_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-basic_photometry.ipynb
+[forcast_1_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-Grism_Inspection-1.ipynb
+[forcast_2_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-Grism_LineAnalysis-2.ipynb
+[forcast_3_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-Grism_CustomExtraction-3.ipynb
+[hawc_nb]:https://github.com/s-goldman/Recipes/blob/main/HAWC/HAWC_30_Dor.ipynb
+
+
+
+
+
 [forcast_notebook]:https://github.com/s-goldman/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
