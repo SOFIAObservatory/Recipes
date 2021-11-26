@@ -11,14 +11,14 @@
 **Contact us**: For questions not addressed in these notebooks or the SOFIA handbooks, please contact us at the
 sofia_help@sofia.usra.edu.
 
-**Feedback**: We also encourage you to submit any comments or suggestions on these notebooks through a Github "Issue".
+**Feedback**: We also encourage you to submit any comments or suggestions on these notebooks through a new Github "[Issue](https://github.com/SOFIAObservatory/Recipes/issues/new)".
 
 
 | Notebook | Description |
 | :--- | :---  |
 | [SOFIA: data retrieval][isra_nb] | <span style="color:#970505;">Aim</span>: Download SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html))<br /> |
 | [FORCAST: Basic Photometry][forcast_photometry_nb] |  <span style="color:#970505;">Aim</span>: Simple aperture photometry and uncertainty calculation. <br /> <span style="color:#970505;">Data</span>: FORCAST image data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy, photutils |
-| [FORCAST: Grism Inspection][forcast_1_nb] |  <span style="color:#970505;">Aim</span>: Inspection of FORCAST grism data. <br /> <span style="color:#970505;">Data</span>: FORCAST grism data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FORCAST: Grism Inspection][forcast_1_nb] |  <span style="color:#970505;">Aim</span>: Inspection of FORCAST grism data. <br /> <span style="color:#970505;">Data</span>: FORCAST grism data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy, DS9 |
 | [FORCAST: Grism Line Analysis][forcast_2_nb] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: FORCAST grism data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FORCAST: Grism Custom Extraction][forcast_3_nb] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: FORCAST grism data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [HAWC+ Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
