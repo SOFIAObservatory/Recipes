@@ -9,7 +9,7 @@
 **Skill level**: Some of the recipes are `jupyter` notebooks designed for a researcher with a working knowledge of the [numpy/scipy/matplotlib stack](https://scipy.org/install.html) as well the [astropy](http://docs.astropy.org/en/stable/) modules.
 
 **Contact us**: For questions not addressed in these notebooks or the SOFIA handbooks, please contact us at the
-sofia_help@sofia.usra.edu.
+[sofia_help@sofia.usra.edu](sofia_help@sofia.usra.edu).
 
 **Feedback**: We also encourage you to submit any comments or suggestions on these notebooks through a new Github "[Issue](https://github.com/SOFIAObservatory/Recipes/issues/new)".
 
