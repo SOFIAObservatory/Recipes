@@ -15,16 +15,16 @@ Some of the recipes are `jupyter` notebooks designed for a researcher with a wor
 | :--- | :---  |
 | [SOFIA: data retrieval][isra_nb] | <span style="color:#970505;">Aim</span>: Download SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html))<br /> |
 | [FORCAST: Basic Photometry][forcast_photometry_nb] |  <span style="color:#970505;">Aim</span>: Simple aperture photometry and uncertainty calculation. <br /> <span style="color:#970505;">Data</span>: Symbiotic Mira, HM Sge <br /> <span style="color:#970505;">Tools</span>: astropy, photutils |
-| [FORCAST: Grism Inspection][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FORCAST: Grism Line Analysis][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FORCAST: Grism Custom Extraction][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FORCAST: Grism Inspection][forcast_1_nb] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FORCAST: Grism Line Analysis][forcast_2_nb] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FORCAST: Grism Custom Extraction][forcast_3_nb] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [HAWC+ Data Inspection][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FIF-LS: Cube inspection][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FIF-LS: Cube Analysis][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [GREAT: Data Inspection][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [GREAT: Data Analysis][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [EXES: Data Inspection][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [EXES: Data Analysis][forcast_notebook] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FIF-LS: Cube inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FIF-LS: Cube Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [GREAT: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [GREAT: Data Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [EXES: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [EXES: Data Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
 
 
 <!--  <span style="color:#970505;">Data</span>: 30 Doradus  -->
@@ -35,9 +35,4 @@ Some of the recipes are `jupyter` notebooks designed for a researcher with a wor
 [forcast_2_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-Grism_LineAnalysis-2.ipynb
 [forcast_3_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-Grism_CustomExtraction-3.ipynb
 [hawc_nb]:https://github.com/s-goldman/Recipes/blob/main/HAWC/HAWC_30_Dor.ipynb
-
-
-
-
-
-[forcast_notebook]:https://github.com/s-goldman/Recipes/blob/master/FORCAST_v1.1/FORCAST-Grism_Inspection-1.ipynb
+[under_development]:https://github.com/s-goldman/Recipes
