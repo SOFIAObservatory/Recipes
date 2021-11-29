@@ -22,7 +22,7 @@
 | [FORCAST: Grism Inspection][forcast_1_nb] |  <span style="color:#970505;">Aim</span>: Inspection of FORCAST grism data. <br /> <span style="color:#970505;">Tools</span>: astropy, DS9 |
 | [FORCAST: Grism Line Analysis][forcast_2_nb] |  <span style="color:#970505;">Aim</span>: Basic line fluxes and line fitting of grism data. <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FORCAST: Grism Custom Extraction][forcast_3_nb] |  <span style="color:#970505;">Aim</span>: Extract grism data with a user-defined aperture <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [HAWC+ Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [HAWC+ Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Basic inspection and analysis. <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FIF-LS: Cube inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FIF-LS: Cube Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [GREAT: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
