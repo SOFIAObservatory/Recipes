@@ -11,7 +11,7 @@
 **Contact us**: For questions not addressed in these notebooks or the SOFIA handbooks, please contact us at the
 [sofia_help@sofia.usra.edu](mailto:sofia_help@sofia.usra.edu).
 
-**Feedback**: We also encourage you to submit any comments or suggestions on these notebooks through a new Github "[Issue](https://github.com/SOFIAObservatory/Recipes/issues/new)".
+**Feedback**: We also encourage you to submit any comments or suggestions on these notebooks through a new Github "[Issue](https://github.com/SOFIAObservatory/Recipes/issues/new/choose)".
 
 | Notebook | Description |
 | :--- | :---  |
