@@ -18,17 +18,17 @@
 | Notebook | Description |
 | :--- | :---  |
 | [SOFIA: data retrieval][isra_nb] | <span style="color:#970505;">Aim</span>: Download SOFIA data through the Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu/Missions/sofia.html))<br /> |
-| [FORCAST: Basic Photometry][forcast_photometry_nb] |  <span style="color:#970505;">Aim</span>: Simple aperture photometry and uncertainty calculation. <br /> <span style="color:#970505;">Data</span>: FORCAST image data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy, photutils |
-| [FORCAST: Grism Inspection][forcast_1_nb] |  <span style="color:#970505;">Aim</span>: Inspection of FORCAST grism data. <br /> <span style="color:#970505;">Data</span>: FORCAST grism data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy, DS9 |
-| [FORCAST: Grism Line Analysis][forcast_2_nb] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: FORCAST grism data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FORCAST: Grism Custom Extraction][forcast_3_nb] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: FORCAST grism data (Level 3) <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [HAWC+ Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FIF-LS: Cube inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FIF-LS: Cube Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [GREAT: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [GREAT: Data Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [EXES: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [EXES: Data Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Data</span>: Level 3 (flux calibrated) FORCAST images <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FORCAST: Basic Photometry][forcast_photometry_nb] |  <span style="color:#970505;">Aim</span>: Simple aperture photometry and uncertainty calculation. <br /> <span style="color:#970505;">Tools</span>: astropy, photutils |
+| [FORCAST: Grism Inspection][forcast_1_nb] |  <span style="color:#970505;">Aim</span>: Inspection of FORCAST grism data. <br /> <span style="color:#970505;">Tools</span>: astropy, DS9 |
+| [FORCAST: Grism Line Analysis][forcast_2_nb] |  <span style="color:#970505;">Aim</span>: Basic line fluxes and line fitting of grism data. <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FORCAST: Grism Custom Extraction][forcast_3_nb] |  <span style="color:#970505;">Aim</span>: Extract grism data with a user-defined aperture <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [HAWC+ Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FIF-LS: Cube inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [FIF-LS: Cube Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [GREAT: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [GREAT: Data Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br />  <span style="color:#970505;">Tools</span>: astropy |
+| [EXES: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [EXES: Data Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
 
 
 <!--  <span style="color:#970505;">Data</span>: 30 Doradus  -->
