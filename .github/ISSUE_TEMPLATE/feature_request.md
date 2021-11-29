@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+Please describe your request in as little or as much detail as you would like. Examples of things to include are shown below.
+
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
