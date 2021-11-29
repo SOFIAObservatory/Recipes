@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Please Describe your problem in as little or as much detail as you would like. Examples of things to include are shown below.
+Please describe your problem in as little or as much detail as you would like. Examples of things to include are shown below.
 
 **Describe the bug**
 A clear and concise description of what the bug is.
