@@ -22,9 +22,7 @@
 | [FORCAST: Grism Inspection][forcast_1_nb] |  <span style="color:#970505;">Aim</span>: Inspection of FORCAST grism data. <br /> <span style="color:#970505;">Tools</span>: astropy, DS9 |
 | [FORCAST: Grism Line Analysis][forcast_2_nb] |  <span style="color:#970505;">Aim</span>: Basic line fluxes and line fitting of grism data. <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [FORCAST: Grism Custom Extraction][forcast_3_nb] |  <span style="color:#970505;">Aim</span>: Extract grism data with a user-defined aperture <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [HAWC+ Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Basic inspection and analysis. <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FIF-LS: Cube inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
-| [FIF-LS: Cube Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
+| [HAWC+ Data Inspection][hawc_nb] |  <span style="color:#970505;">Aim</span>: Basic inspection and analysis. <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [GREAT: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
 | [GREAT: Data Analysis][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br />  <span style="color:#970505;">Tools</span>: astropy |
 | [EXES: Data Inspection][under_development] |  <span style="color:#970505;">Aim</span>: Aperture photometry <br /> <span style="color:#970505;">Tools</span>: astropy |
@@ -33,7 +31,7 @@
 
 <!--  <span style="color:#970505;">Data</span>: 30 Doradus  -->
 
-[isra_nb]:https://github.com/s-goldman/Recipes/blob/master/FORCAST/FORCAST-Grism_Inspection-1.ipynb
+[isra_nb]:https://github.com/s-goldman/Recipes/blob/main/SOFIA/SOFIA_data_retrieval.ipynb
 [forcast_photometry_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-basic_photometry.ipynb
 [forcast_1_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-Grism_Inspection-1.ipynb
 [forcast_2_nb]:https://github.com/s-goldman/Recipes/blob/main/FORCAST/FORCAST-Grism_LineAnalysis-2.ipynb
