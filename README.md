@@ -18,7 +18,7 @@
 
 ## Tutorials
 
-| PDFs | Description |
+| PDF | Description |
 | :--- | :---  |
 | [FORCAST][forcast] | <span style="color:#970505;">Aim</span>: Discuss the process of aperture photometry with FORCAST data. <br /> |
 | [FIFI-LS][fifi-ls] | <span style="color:#970505;">Aim</span>: Basic cube analysis. <br /> <span style="color:#970505;">Tools</span>: [SOSPEX][sospex] <br /> |
@@ -28,7 +28,7 @@
 
 ## Jupyter Notebooks
 
-| Notebooks | Description |
+| Notebook | Description |
 | :--- | :---  |
 | [SOFIA: data retrieval][isra_nb] | <span style="color:#970505;">Aim</span>: Download SOFIA data through the Infrared Science Archive ([IRSA][isra]).<br /> |
 | [FORCAST: Basic Photometry][forcast_photometry_nb] |  <span style="color:#970505;">Aim</span>: Simple aperture photometry and uncertainty calculation. <br /> <span style="color:#970505;">Tools</span>: astropy, photutils |
