@@ -1,14 +1,15 @@
-.. SOFIA Data Analysis Tutorials documentation master file, created by
-   sphinx-quickstart on Thu Dec  9 11:41:21 2021.
+.. SOFIA tutorials documentation master file, created by
+   sphinx-quickstart on Thu Dec  9 12:17:35 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SOFIA Data Analysis Tutorials's documentation!
-=========================================================
+Welcome to SOFIA tutorials's documentation!
+===========================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
 
 
 Indices and tables

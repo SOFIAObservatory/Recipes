@@ -17,12 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'SOFIA Data Analysis Tutorials'
-copyright = '2021, Steve Goldman'
-author = 'Steve Goldman'
-
-# The full version, including alpha/beta/rc tags
-release = '1.0'
+project = 'SOFIA tutorials'
+copyright = '2021, Steven Goldman'
+author = 'Steven Goldman'
 
 
 # -- General configuration ---------------------------------------------------
