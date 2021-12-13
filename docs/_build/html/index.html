@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOFIA Tutorials &mdash; SOFIA tutorials  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Overview" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> SOFIA tutorials
+            <img src="_static/sofia_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf_tutorials.html">PDF Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jp_notebooks.html">Jupyter Notebook Tutorials</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">SOFIA tutorials</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>SOFIA Tutorials</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="sofia-tutorials">
+<h1>SOFIA Tutorials<a class="headerlink" href="#sofia-tutorials" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf_tutorials.html">PDF Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jp_notebooks.html">Jupyter Notebook Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SOFIA_data_retrieval.html">SOFIA data retrieval</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SOFIA_data_retrieval.html#Goals:">Goals:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SOFIA_data_retrieval.html#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SOFIA_data_retrieval.html#Downloading-HAWC+-Data">Downloading HAWC+ Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SOFIA_data_retrieval.html#SOFIA-Data-Organization">SOFIA Data Organization</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FORCAST-Basic_Photometry.html">FORCAST Basic photometry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Goals">Goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Import-packages">Import packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Load-data">Load data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Get-aperture-radius-sum">Get aperture radius sum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Define-background-annulus">Define background annulus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Calculate-and-subtract-background-flux">Calculate and subtract background flux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Calculate-uncertainty">Calculate uncertainty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Calculate-final-flux-+-uncertainty">Calculate final flux + uncertainty</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html">FORCAST Grism Spectra: Basic Inspection and Assessment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Goals">Goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Imports">Imports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Ingredients">Ingredients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#FORCAST-data">FORCAST data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Viewing-the-FITS-Header">Viewing the FITS Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Slit-Orientation-on-the-Sky">Slit Orientation on the Sky</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Reading-the-File-and-Loading-the-Data-into-a-Table-Structure">Reading the File and Loading the Data into a Table Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Plotting-the-Spectra">Plotting the Spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Masking-Regions-with-Strong-Telluric-Features">Masking Regions with Strong Telluric Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Plotting-the-Complete-SED">Plotting the Complete SED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Calibration-Using-Independant-Photometry">Calibration Using Independant Photometry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Converting-to-\lambdaF_{\lambda}">Converting to <span class="math notranslate nohighlight">\(\lambda\)</span>F<span class="math notranslate nohighlight">\(_{\lambda}\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST Grism Spectra: Basic Line Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Goals">Goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Imports">Imports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Ingredients">Ingredients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Cleaning-the-Data">Cleaning the Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Fitting-the-Continuum-Across-the-Grism">Fitting the Continuum Across the Grism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Measuring-Line-Flux">Measuring Line Flux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Line-Fitting">Line Fitting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST Grism Spectra: Custom Spectral Extraction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Goals">Goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Imports">Imports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Ingredients">Ingredients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Inspecting-the-Extraction-Aperture">Inspecting the Extraction Aperture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Custom-Extractions">Custom Extractions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HAWC_30_Dor.html">HAWC+ Data Recipe / 30 Doradus Data Release</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Goals">Goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Imports">Imports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Downloading-HAWC+-Data">Downloading HAWC+ Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#SOFIA-Data-Organization">SOFIA Data Organization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#30-Dor-data">30 Dor data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Data-Structure">Data Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Plotting-Polarization-Vectors">Plotting Polarization Vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#HAWC+-Polarization-Maps">HAWC+ Polarization Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exes_example_notebook.html">EXES: Data inspection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Goals">Goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Imports">Imports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Data-structure">Data structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Flux-units">Flux units</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="overview.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, SOFIA/USRA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

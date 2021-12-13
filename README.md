@@ -1,4 +1,4 @@
-# SOFIA Data Analysis Tutorials
+### SOFIA Data Analysis Tutorials
 
 [repo]:s-goldman
 
