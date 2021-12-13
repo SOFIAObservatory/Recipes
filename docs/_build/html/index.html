@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOFIA Tutorials &mdash; SOFIA tutorials  documentation</title>
+  <title>Overview &mdash; SOFIA tutorials  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Overview" href="overview.html" /> 
+    <link rel="next" title="SOFIA data retrieval" href="SOFIA_data_retrieval.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -38,11 +38,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="SOFIA_data_retrieval.html">SOFIA data retrieval</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-Basic_Photometry.html">FORCAST Basic photometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html">FORCAST Grism Spectra: Basic Inspection and Assessment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST Grism Spectra: Basic Line Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST Grism Spectra: Custom Spectral Extraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HAWC_30_Dor.html">HAWC+ Data Recipe / 30 Doradus Data Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EXES-Data-Inspection.html">EXES: Data inspection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf_tutorials.html">PDF Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jp_notebooks.html">Jupyter Notebook Tutorials</a></li>
 </ul>
 
         </div>
@@ -59,7 +63,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>SOFIA Tutorials</li>
+      <li>Overview</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -93,100 +97,116 @@
     text-align: unset;
 }
 </style>
-<section id="sofia-tutorials">
-<h1>SOFIA Tutorials<a class="headerlink" href="#sofia-tutorials" title="Permalink to this headline"></a></h1>
+<section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h1>
+<p><a class="reference external" href="https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml"><img alt="Python package" src="https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg" /></a></p>
+<p><strong>Aim</strong>: These documents provide simple “recipes” (i.e., descriptions
+and guided examples) for common data analysis objectives using SOFIA
+processed data.</p>
+<p><strong>Skill level</strong>: These are generally written for a graduate student
+audience. Some of the recipes are <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> notebooks designed for a
+researcher with a working knowledge of the <a class="reference external" href="https://scipy.org/install.html">numpy/scipy/matplotlib
+stack</a> as well the
+<a class="reference external" href="http://docs.astropy.org/en/stable/">astropy</a> modules.</p>
+<section id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Jupyter Notebook</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="SOFIA_data_retrieval.html">SOFIA: data retrieval</a></p></td>
+<td><p><strong>Aim</strong>: Download SOFIA data through the IRSA.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="FORCAST-Basic_Photometry.html">FORCAST: Basic Photometry</a></p></td>
+<td><p><strong>Aim</strong>: Simple aperture photometry and uncertainty calculation.</p>
+<p><strong>Tools</strong>: astropy, photutils</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="FORCAST-Grism_Inspection-1.html">FORCAST: Grism Inspection</a></p></td>
+<td><p><strong>Aim</strong>: Inspection of FORCAST grism data.</p>
+<p><strong>Tools</strong>: astropy, DS9</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST: Grism Line Analysis</a></p></td>
+<td><p><strong>Aim</strong>: Basic line fluxes and line fitting of grism data.</p>
+<p><strong>Tools</strong>: astropy</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST: Grism Custom Extraction</a></p></td>
+<td><p><strong>Aim</strong>: Extract grism data with a user-defined aperture.</p>
+<p><strong>Tools</strong>: astropy</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="HAWC_30_Dor.html">HAWC+ Data Inspection</a></p></td>
+<td><p><strong>Aim</strong>: Basic inspection and analysis.</p>
+<p><strong>Tools</strong>: astropy</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="EXES-Data-Inspection.html"><span class="doc">EXES: Data Inspection</span></a></p></td>
+<td><p><strong>Aim</strong>: Aperture photometry</p>
+<p><strong>Tools</strong>: astropy</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 68%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>PDFs</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Photometry.pdf">FORCAST</a></p></td>
+<td><p><strong>Aim</strong>: Discuss the process of aperture photometry with FORCAST data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/SOFIAObservatory/Recipes/blob/master/FIFI-LS_CubeAnalysis.pdf">FIFI-LS</a></p></td>
+<td><p><strong>Aim</strong>: Basic cube analysis.</p>
+<p><strong>Tools</strong>: SOSPEX</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/SOFIAObservatory/Recipes/blob/master/GREAT_CLASSPrimer.pdf">GREAT</a></p></td>
+<td><p><strong>Aim</strong>: How to view GREAT spectra.</p>
+<p><strong>Tools</strong>: CLASS</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contact us</strong>: For questions not addressed in these notebooks or the
+SOFIA handbooks, please contact us at the <a class="reference external" href="mailto:sofia_help&#37;&#52;&#48;sofia&#46;usra&#46;edu">sofia_help<span>&#64;</span>sofia<span>&#46;</span>usra<span>&#46;</span>edu</a>.</p>
+<p><strong>Feedback</strong>: We also encourage you to submit any comments or
+suggestions on these notebooks through a new Github
+“<a class="reference external" href="https://github.com/SOFIAObservatory/Recipes/issues/new/choose">Issue</a>”.</p>
+<p><strong>Resources</strong>: <a class="reference external" href="https://www.sofia.usra.edu/science/proposing-and-observing/data-products/data-resources">SOFIA Data Handbooks</a>, <a class="reference external" href="https://github.com/SOFIAObservatory/Recipes">Github repository</a></p>
+<section id="additional-links">
+<h3>Additional Links<a class="headerlink" href="#additional-links" title="Permalink to this headline"></a></h3>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SOFIA_data_retrieval.html">SOFIA data retrieval</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-Basic_Photometry.html">FORCAST Basic photometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html">FORCAST Grism Spectra: Basic Inspection and Assessment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST Grism Spectra: Basic Line Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST Grism Spectra: Custom Spectral Extraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HAWC_30_Dor.html">HAWC+ Data Recipe / 30 Doradus Data Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EXES-Data-Inspection.html">EXES: Data inspection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf_tutorials.html">PDF Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jp_notebooks.html">Jupyter Notebook Tutorials</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="SOFIA_data_retrieval.html">SOFIA data retrieval</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SOFIA_data_retrieval.html#Goals:">Goals:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SOFIA_data_retrieval.html#Introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SOFIA_data_retrieval.html#Downloading-HAWC+-Data">Downloading HAWC+ Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SOFIA_data_retrieval.html#SOFIA-Data-Organization">SOFIA Data Organization</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="FORCAST-Basic_Photometry.html">FORCAST Basic photometry</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Goals">Goals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Import-packages">Import packages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Load-data">Load data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Get-aperture-radius-sum">Get aperture radius sum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Define-background-annulus">Define background annulus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Calculate-and-subtract-background-flux">Calculate and subtract background flux</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Calculate-uncertainty">Calculate uncertainty</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Basic_Photometry.html#Calculate-final-flux-+-uncertainty">Calculate final flux + uncertainty</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html">FORCAST Grism Spectra: Basic Inspection and Assessment</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Goals">Goals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Imports">Imports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Ingredients">Ingredients</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#FORCAST-data">FORCAST data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Viewing-the-FITS-Header">Viewing the FITS Header</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Slit-Orientation-on-the-Sky">Slit Orientation on the Sky</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Reading-the-File-and-Loading-the-Data-into-a-Table-Structure">Reading the File and Loading the Data into a Table Structure</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Plotting-the-Spectra">Plotting the Spectra</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Masking-Regions-with-Strong-Telluric-Features">Masking Regions with Strong Telluric Features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Plotting-the-Complete-SED">Plotting the Complete SED</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Calibration-Using-Independant-Photometry">Calibration Using Independant Photometry</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html#Converting-to-\lambdaF_{\lambda}">Converting to <span class="math notranslate nohighlight">\(\lambda\)</span>F<span class="math notranslate nohighlight">\(_{\lambda}\)</span></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST Grism Spectra: Basic Line Analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Goals">Goals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Imports">Imports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Ingredients">Ingredients</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Cleaning-the-Data">Cleaning the Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Fitting-the-Continuum-Across-the-Grism">Fitting the Continuum Across the Grism</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Measuring-Line-Flux">Measuring Line Flux</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html#Line-Fitting">Line Fitting</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST Grism Spectra: Custom Spectral Extraction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Goals">Goals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Imports">Imports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Ingredients">Ingredients</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Inspecting-the-Extraction-Aperture">Inspecting the Extraction Aperture</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html#Custom-Extractions">Custom Extractions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="HAWC_30_Dor.html">HAWC+ Data Recipe / 30 Doradus Data Release</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Goals">Goals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Imports">Imports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Downloading-HAWC+-Data">Downloading HAWC+ Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#SOFIA-Data-Organization">SOFIA Data Organization</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#30-Dor-data">30 Dor data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Data-Structure">Data Structure</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#Plotting-Polarization-Vectors">Plotting Polarization Vectors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="HAWC_30_Dor.html#HAWC+-Polarization-Maps">HAWC+ Polarization Maps</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="exes_example_notebook.html">EXES: Data inspection</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Goals">Goals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Imports">Imports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Data-structure">Data structure</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exes_example_notebook.html#Flux-units">Flux units</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </div>
+</section>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="overview.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="SOFIA_data_retrieval.html" class="btn btn-neutral float-right" title="SOFIA data retrieval" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
