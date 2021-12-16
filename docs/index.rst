@@ -1,4 +1,4 @@
-Overview
+SOFIA DATA Analysis Tutorials
 =============================
 
 |Python package|
@@ -42,7 +42,7 @@ Tutorials
 |                                       |                                                                        |
 |                                       | **Tools**: astropy                                                     |
 +---------------------------------------+------------------------------------------------------------------------+
-| `EXES: Data Inspection`_              | **Aim**: Aperture photometry                                           |
+| `EXES: Data Inspection`_              | **Aim**: Basic inspection and plotting spectra                         |
 |                                       |                                                                        |
 |                                       | **Tools**: astropy                                                     |
 +---------------------------------------+------------------------------------------------------------------------+
