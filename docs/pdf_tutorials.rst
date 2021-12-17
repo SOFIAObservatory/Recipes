@@ -4,8 +4,6 @@ PDF Tutorials
 +------------+------------------------------------------------------------------------+
 | PDF        | Description                                                            |
 +------------+------------------------------------------------------------------------+
-| `FORCAST`_ | **Aim**: Discuss the process of aperture photometry with FORCAST data. |
-+------------+------------------------------------------------------------------------+
 | `FIFI-LS`_ | **Aim**: Basic cube analysis.                                          |
 |            |                                                                        |
 |            | **Tools**: SOSPEX                                                      |
@@ -16,6 +14,5 @@ PDF Tutorials
 +------------+------------------------------------------------------------------------+
 
 
-.. _FORCAST: https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Photometry.pdf
 .. _FIFI-LS: https://github.com/SOFIAObservatory/Recipes/blob/master/FIFI-LS_CubeAnalysis.pdf
 .. _GREAT: https://github.com/SOFIAObservatory/Recipes/blob/master/GREAT_CLASSPrimer.pdf

@@ -16,6 +16,6 @@ PDF Tutorials
 +------------+------------------------------------------------------------------------+
 
 
-.. _FORCAST: https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Photometry.pdf
+.. _FORCAST: FORCAST-photometry_detailed.ipynb
 .. _FIFI-LS: https://github.com/SOFIAObservatory/Recipes/blob/master/FIFI-LS_CubeAnalysis.pdf
 .. _GREAT: https://github.com/SOFIAObservatory/Recipes/blob/master/GREAT_CLASSPrimer.pdf

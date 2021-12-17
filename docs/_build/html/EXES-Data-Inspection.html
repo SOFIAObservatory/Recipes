@@ -44,6 +44,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="SOFIA_data_retrieval.html">SOFIA data retrieval</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FORCAST-Basic_Photometry.html">FORCAST Basic photometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FORCAST-photometry_detailed.html">FORCAST photometry (detailed)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html">FORCAST Grism Spectra: Basic Inspection and Assessment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST Grism Spectra: Basic Line Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST Grism Spectra: Custom Spectral Extraction</a></li>
@@ -52,8 +53,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#Goals">Goals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Imports">Imports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Ingredients">Ingredients</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Data-structure">Data structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Flux-units">Flux units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Plot-a-spectrum">Plot a spectrum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pdf_tutorials.html">PDF Tutorials</a></li>
@@ -372,7 +375,7 @@ div.rendered_html tbody tr:hover {
 </section>
 <section id="Introduction">
 <h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
-<p>text</p>
+<p>In this tutorial we will go through the process of open the Level 3 grism data and plotting a spectrum with respect to a simple atmospheric model. The data set being used is the AGB star IK Tau.</p>
 </section>
 <section id="Imports">
 <h2>Imports<a class="headerlink" href="#Imports" title="Permalink to this headline"></a></h2>
@@ -384,10 +387,20 @@ div.rendered_html tbody tr:hover {
 <span></span><span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
 <span class="kn">import</span> <span class="nn">matplotlib.colors</span> <span class="k">as</span> <span class="nn">colors</span>
 <span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="k">as</span> <span class="nn">cm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">astropy.units</span> <span class="k">as</span> <span class="nn">u</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 </div>
 </div>
+</section>
+<section id="Ingredients">
+<h2>Ingredients<a class="headerlink" href="#Ingredients" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Level 3 (flux calibrated) FORCAST grism data (either CAL or CMB files) from the Infrared Science Archive (<a class="reference external" href="https://irsa.ipac.caltech.edu/Missions/sofia.html">IRSA</a>)</p></li>
+</ol>
+<p><strong>You can download the example data directly</strong><a href="#id1"><span class="problematic" id="id2">`here &lt;&gt;`__</span></a>.</p>
+<p><a class="reference external" href="https://www.sofia.usra.edu/sites/default/files/USpot_DCS_DPS/Documents/EXES_GO-DataHandbook.pdf">EXES GO Handbook</a> for reference (latest version can be found on the <a class="reference external" href="https://www.sofia.usra.edu/data/data-processing-0#DataHandbooks">SOFIA Data Products</a> page.)</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -513,6 +526,9 @@ array([[ 7.01745789e+02,  7.01746643e+02,  7.01747559e+02, ...,
 <section id="Flux-units">
 <h2>Flux units<a class="headerlink" href="#Flux-units" title="Permalink to this headline"></a></h2>
 <p>The incidents counts on the EXES detector are processed and returned as a flux in erg s-1 cm-2 sr-1. The uncertainty is calculated similarly, yet is not as accurate as listed. Uncertainties are typically in the range of 20%.</p>
+</section>
+<section id="Plot-a-spectrum">
+<h2>Plot a spectrum<a class="headerlink" href="#Plot-a-spectrum" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -536,7 +552,7 @@ array([[ 7.01745789e+02,  7.01746643e+02,  7.01747559e+02, ...,
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/EXES-Data-Inspection_13_0.png" src="_images/EXES-Data-Inspection_13_0.png" />
+<img alt="_images/EXES-Data-Inspection_15_0.png" src="_images/EXES-Data-Inspection_15_0.png" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">
@@ -574,41 +590,14 @@ array([[ 7.01745789e+02,  7.01746643e+02,  7.01747559e+02, ...,
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/EXES-Data-Inspection_15_0.png" src="_images/EXES-Data-Inspection_15_0.png" />
+<img alt="_images/EXES-Data-Inspection_17_0.png" src="_images/EXES-Data-Inspection_17_0.png" />
 </div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/EXES-Data-Inspection_15_1.png" src="_images/EXES-Data-Inspection_15_1.png" />
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<!-- terlluric querying psg plantary spectrum generator (nasa goddard) --><!-- hitran (happy interface) and exmol atmospheric models geisa models --><!-- specutils --><!-- TEXES folks Colece Silyk (Texas austin) --><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
+<img alt="_images/EXES-Data-Inspection_17_1.png" src="_images/EXES-Data-Inspection_17_1.png" />
 </div>
 </div>
 </section>

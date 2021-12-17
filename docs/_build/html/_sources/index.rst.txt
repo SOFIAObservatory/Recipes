@@ -1,4 +1,4 @@
-Overview
+SOFIA DATA Analysis Tutorials
 =============================
 
 |Python package|
@@ -20,11 +20,13 @@ Tutorials
 +---------------------------------------+------------------------------------------------------------------------+
 | **Jupyter Notebook**                  | **Description**                                                        |
 +---------------------------------------+------------------------------------------------------------------------+
-| `SOFIA: data retrieval`_              | **Aim**: Download SOFIA data through the IRSA.                         |
+| `SOFIA data retrieval`_               | **Aim**: Download SOFIA data through the IRSA.                         |
 +---------------------------------------+------------------------------------------------------------------------+
 | `FORCAST: Basic Photometry`_          | **Aim**: Simple aperture photometry and uncertainty calculation.       |
 |                                       |                                                                        |
 |                                       | **Tools**: astropy, photutils                                          |
++---------------------------------------+------------------------------------------------------------------------+
+| `FORCAST: Photometry (detailed)`_     | **Aim**: Detailed description of aperture photometry.                  |
 +---------------------------------------+------------------------------------------------------------------------+
 | `FORCAST: Grism Inspection`_          | **Aim**: Inspection of FORCAST grism data.                             |
 |                                       |                                                                        |
@@ -42,15 +44,17 @@ Tutorials
 |                                       |                                                                        |
 |                                       | **Tools**: astropy                                                     |
 +---------------------------------------+------------------------------------------------------------------------+
-| `EXES: Data Inspection`_              | **Aim**: Aperture photometry                                           |
+| `EXES: Data Inspection`_              | **Aim**: Basic inspection and plotting spectra                         |
 |                                       |                                                                        |
 |                                       | **Tools**: astropy                                                     |
 +---------------------------------------+------------------------------------------------------------------------+
 
 +----------------------------------+------------------------------------------------------------------------+
-| **PDFs**                         | **Description**                                                        |
+| **Other**                        | **Description**                                                        |
 +----------------------------------+------------------------------------------------------------------------+
-| `FORCAST`_                       | **Aim**: Discuss the process of aperture photometry with FORCAST data. |
+| `SOFIA data retrieval`_          | **Aim**: Download SOFIA data through the IRSA.                         |
++----------------------------------+------------------------------------------------------------------------+
+| `FORCAST`_                       | **Aim**: Detailed description of aperture photometry.                  |
 +----------------------------------+------------------------------------------------------------------------+
 | `FIFI-LS`_                       | **Aim**: Basic cube analysis.                                          |
 |                                  |                                                                        |
@@ -70,16 +74,15 @@ suggestions on these notebooks through a new Github
 
 **Resources**: `SOFIA Data Handbooks <https://www.sofia.usra.edu/science/proposing-and-observing/data-products/data-resources>`__, `Github repository <https://github.com/SOFIAObservatory/Recipes>`__
 
-
-.. _`SOFIA: data retrieval`: SOFIA_data_retrieval.html
+.. _`SOFIA data retrieval`: SOFIA_data_retrieval.html
 .. _`FORCAST: Basic Photometry`: FORCAST-Basic_Photometry.html
+.. _`FORCAST: Photometry (detailed)`: FORCAST-photometry_detailed.ipynb
 .. _`FORCAST: Grism Inspection`: FORCAST-Grism_Inspection-1.html
 .. _`FORCAST: Grism Line Analysis`: FORCAST-Grism_LineAnalysis-2.html
 .. _`FORCAST: Grism Custom Extraction`: FORCAST-Grism_CustomExtraction-3.html
 .. _`HAWC+ Data Inspection`: HAWC_30_Dor.html
 .. _`EXES: Data Inspection`: EXES-Data-Inspection.ipynb
 
-.. _FORCAST: https://github.com/SOFIAObservatory/Recipes/blob/master/FORCAST_Photometry.pdf
 .. _FIFI-LS: https://github.com/SOFIAObservatory/Recipes/blob/master/FIFI-LS_CubeAnalysis.pdf
 .. _GREAT: https://github.com/SOFIAObservatory/Recipes/blob/master/GREAT_CLASSPrimer.pdf
 
@@ -94,6 +97,7 @@ Additional Links
 
   SOFIA_data_retrieval.ipynb
   FORCAST-Basic_Photometry.ipynb
+  FORCAST-photometry_detailed.ipynb
   FORCAST-Grism_Inspection-1.ipynb
   FORCAST-Grism_LineAnalysis-2.ipynb
   FORCAST-Grism_CustomExtraction-3.ipynb
