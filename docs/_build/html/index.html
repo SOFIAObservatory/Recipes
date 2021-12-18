@@ -47,7 +47,8 @@
 <li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST Grism Spectra: Custom Spectral Extraction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="HAWC_30_Dor.html">HAWC+ Data Recipe / 30 Doradus Data Release</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EXES-Data-Inspection.html">EXES: Data inspection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pdf_tutorials.html">PDF Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FIFI-LS_sospex.html">FIFI-LS: Basic Cube Analysis using SOSPEX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GREAT-Class_primer.html">GREAT: Class primer</a></li>
 </ul>
 
         </div>
@@ -101,7 +102,7 @@
 <section id="sofia-data-analysis-tutorials">
 <h1>SOFIA DATA Analysis Tutorials<a class="headerlink" href="#sofia-data-analysis-tutorials" title="Permalink to this headline"></a></h1>
 <p><a class="reference external" href="https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml"><img alt="Python package" src="https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg" /></a></p>
-<p><strong>Aim</strong>: These documents provide simple “recipes” (i.e., descriptions
+<p><em>Aim</em>: These documents provide simple “recipes” (i.e., descriptions
 and guided examples) for common data analysis objectives using SOFIA
 processed data.</p>
 <p><strong>Skill level</strong>: These are generally written for a graduate student
@@ -117,64 +118,59 @@ stack</a> as well the
 <col style="width: 65%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>Jupyter Notebook</strong></p></td>
+<tr class="row-odd"><td><p><strong>Python</strong></p></td>
 <td><p><strong>Description</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="SOFIA_data_retrieval.html">SOFIA data retrieval</a></p></td>
-<td><p><strong>Aim</strong>: Download SOFIA data through the IRSA.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="FORCAST-Basic_Photometry.html">FORCAST: Basic Photometry</a></p></td>
-<td><p><strong>Aim</strong>: Simple aperture photometry and uncertainty calculation.</p>
-<p><strong>Tools</strong>: astropy, photutils</p>
+<tr class="row-even"><td><p><a class="reference external" href="FORCAST-Basic_Photometry.html">FORCAST: Basic Photometry</a></p></td>
+<td><p><em>Aim</em>: Simple aperture photometry and uncertainty calculation.</p>
+<p><em>Tools</em>: astropy, photutils</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="FORCAST-photometry_detailed.html"><span class="doc">FORCAST: Photometry (detailed)</span></a></p></td>
-<td><p><strong>Aim</strong>: Detailed description of aperture photometry.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="FORCAST-photometry_detailed.html"><span class="doc">FORCAST: Photometry (detailed)</span></a></p></td>
+<td><p><em>Aim</em>: Detailed description of aperture photometry.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="FORCAST-Grism_Inspection-1.html">FORCAST: Grism Inspection</a></p></td>
-<td><p><strong>Aim</strong>: Inspection of FORCAST grism data.</p>
-<p><strong>Tools</strong>: astropy, DS9</p>
+<tr class="row-even"><td><p><a class="reference external" href="FORCAST-Grism_Inspection-1.html">FORCAST: Grism Inspection</a></p></td>
+<td><p><em>Aim</em>: Inspection of FORCAST grism data.</p>
+<p><em>Tools</em>: astropy, DS9</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST: Grism Line Analysis</a></p></td>
-<td><p><strong>Aim</strong>: Basic line fluxes and line fitting of grism data.</p>
-<p><strong>Tools</strong>: astropy</p>
+<tr class="row-odd"><td><p><a class="reference external" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST: Grism Line Analysis</a></p></td>
+<td><p><em>Aim</em>: Basic line fluxes and line fitting of grism data.</p>
+<p><em>Tools</em>: astropy</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST: Grism Custom Extraction</a></p></td>
-<td><p><strong>Aim</strong>: Extract grism data with a user-defined aperture.</p>
-<p><strong>Tools</strong>: astropy</p>
+<tr class="row-even"><td><p><a class="reference external" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST: Grism Custom Extraction</a></p></td>
+<td><p><em>Aim</em>: Extract grism data with a user-defined aperture.</p>
+<p><em>Tools</em>: astropy</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="HAWC_30_Dor.html">HAWC+ Data Inspection</a></p></td>
-<td><p><strong>Aim</strong>: Basic inspection and analysis.</p>
-<p><strong>Tools</strong>: astropy</p>
+<tr class="row-odd"><td><p><a class="reference external" href="HAWC_30_Dor.html">HAWC+ Data Inspection</a></p></td>
+<td><p><em>Aim</em>: Basic inspection and analysis.</p>
+<p><em>Tools</em>: astropy</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="EXES-Data-Inspection.html"><span class="doc">EXES: Data Inspection</span></a></p></td>
-<td><p><strong>Aim</strong>: Basic inspection and plotting spectra</p>
-<p><strong>Tools</strong>: astropy</p>
+<tr class="row-even"><td><p><a class="reference internal" href="EXES-Data-Inspection.html"><span class="doc">EXES: Data Inspection</span></a></p></td>
+<td><p><em>Aim</em>: Basic inspection and plotting spectra</p>
+<p><em>Tools</em>: astropy</p>
 </td>
 </tr>
-</tbody>
-</table>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 68%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>PDFs</strong></p></td>
+<tr class="row-odd"><td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>Other</strong></p></td>
 <td><p><strong>Description</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/SOFIAObservatory/Recipes/blob/master/FIFI-LS_CubeAnalysis.pdf">FIFI-LS</a></p></td>
-<td><p><strong>Aim</strong>: Basic cube analysis.</p>
-<p><strong>Tools</strong>: SOSPEX</p>
+<tr class="row-odd"><td><p><a class="reference external" href="SOFIA_data_retrieval.html">SOFIA data retrieval</a></p></td>
+<td><p><em>Aim</em>: Download SOFIA data through the IRSA.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="FIFI-LS_sospex.html"><span class="doc">FIFI-LS</span></a></p></td>
+<td><p><em>Aim</em>: Basic cube analysis.</p>
+<p><em>Tools</em>: SOSPEX</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/SOFIAObservatory/Recipes/blob/master/GREAT_CLASSPrimer.pdf">GREAT</a></p></td>
-<td><p><strong>Aim</strong>: How to view GREAT spectra.</p>
-<p><strong>Tools</strong>: CLASS</p>
+<tr class="row-odd"><td><p><a class="reference internal" href="GREAT-Class_primer.html"><span class="doc">GREAT</span></a></p></td>
+<td><p><em>Aim</em>: How to view GREAT spectra.</p>
+<p><em>Tools</em>: CLASS</p>
 </td>
 </tr>
 </tbody>
@@ -197,7 +193,8 @@ suggestions on these notebooks through a new Github
 <li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST Grism Spectra: Custom Spectral Extraction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="HAWC_30_Dor.html">HAWC+ Data Recipe / 30 Doradus Data Release</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EXES-Data-Inspection.html">EXES: Data inspection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pdf_tutorials.html">PDF Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FIFI-LS_sospex.html">FIFI-LS: Basic Cube Analysis using SOSPEX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GREAT-Class_primer.html">GREAT: Class primer</a></li>
 </ul>
 </div>
 </section>
