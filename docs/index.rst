@@ -79,7 +79,6 @@ Tutorials
 .. _`FORCAST: Grism Custom Extraction`: FORCAST-Grism_CustomExtraction-3.html
 .. _`HAWC+ Data Inspection`: HAWC_30_Dor.html
 .. _`EXES: Data Inspection`: EXES-Data-Inspection.ipynb
-
 .. _`SOFIA data retrieval`: SOFIA_data_retrieval.html
 .. _FIFI-LS: FIFI-LS_sospex.ipynb
 .. _GREAT: GREAT-Class_primer.ipynb
@@ -88,23 +87,13 @@ Tutorials
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
 
 .. toctree::
-  :caption: Python Tutorials
+  :caption: Tutorials
   :hidden:
   :maxdepth: 1
 
-  FORCAST-Basic_Photometry.ipynb
-  FORCAST-photometry_detailed.ipynb
-  FORCAST-Grism_Inspection-1.ipynb
-  FORCAST-Grism_LineAnalysis-2.ipynb
-  FORCAST-Grism_CustomExtraction-3.ipynb
-  HAWC_30_Dor.ipynb
-  EXES-Data-Inspection.ipynb
-
-.. toctree::
-  :caption: Other Tutorials
-  :hidden:
-  :maxdepth: 1
-
-  SOFIA_data_retrieval.ipynb
-  FIFI-LS_sospex.ipynb
-  GREAT-Class_primer.ipynb
+  general.rst
+  forcast.rst
+  hawc+.rst
+  exes.rst
+  great.rst
+  fifi-ls.rst

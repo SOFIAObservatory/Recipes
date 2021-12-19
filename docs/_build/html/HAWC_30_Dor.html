@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HAWC+ Data Recipe / 30 Doradus Data Release &mdash; SOFIA tutorials  documentation</title>
+  <title>HAWC+ Data Inspection &mdash; SOFIA tutorials  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -21,8 +21,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="EXES: Data inspection" href="EXES-Data-Inspection.html" />
-    <link rel="prev" title="FORCAST Grism Spectra: Custom Spectral Extraction" href="FORCAST-Grism_CustomExtraction-3.html" /> 
+    <link rel="next" title="EXES" href="exes.html" />
+    <link rel="prev" title="HAWC+" href="hawc%2B.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,35 +41,31 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Python Tutorials</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="FORCAST-Basic_Photometry.html">FORCAST Basic photometry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="FORCAST-photometry_detailed.html">FORCAST photometry (detailed)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_Inspection-1.html">FORCAST Grism Spectra: Basic Inspection and Assessment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_LineAnalysis-2.html">FORCAST Grism Spectra: Basic Line Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="FORCAST-Grism_CustomExtraction-3.html">FORCAST Grism Spectra: Custom Spectral Extraction</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">HAWC+ Data Recipe / 30 Doradus Data Release</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#Goals">Goals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Imports">Imports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Downloading-HAWC+-Data">Downloading HAWC+ Data</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#You-can-download-the-example-data-directly-here.">You can download the example data directly here.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="forcast.html">FORCAST</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="hawc%2B.html">HAWC+</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">HAWC+ Data Inspection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Goals">Goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Imports">Imports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Downloading-HAWC+-Data">Downloading HAWC+ Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#You-can-download-the-example-data-directly-here.">You can download the example data directly here.</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#SOFIA-Data-Organization">SOFIA Data Organization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#30-Dor-data">30 Dor data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Data-Structure">Data Structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Plotting-Polarization-Vectors">Plotting Polarization Vectors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#HAWC+-Polarization-Maps">HAWC+ Polarization Maps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#SOFIA-Data-Organization">SOFIA Data Organization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#30-Dor-data">30 Dor data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Data-Structure">Data Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Plotting-Polarization-Vectors">Plotting Polarization Vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#HAWC+-Polarization-Maps">HAWC+ Polarization Maps</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="EXES-Data-Inspection.html">EXES: Data inspection</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Other Tutorials</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="SOFIA_data_retrieval.html">SOFIA data retrieval</a></li>
-<li class="toctree-l1"><a class="reference internal" href="FIFI-LS_sospex.html">FIFI-LS: Basic Cube Analysis using SOSPEX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GREAT-Class_primer.html">GREAT: Class primer</a></li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exes.html">EXES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="great.html">GREAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fifi-ls.html">FIFI-LS</a></li>
 </ul>
 
         </div>
@@ -86,7 +82,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>HAWC+ Data Recipe / 30 Doradus Data Release</li>
+          <li><a href="hawc%2B.html">HAWC+</a> &raquo;</li>
+      <li>HAWC+ Data Inspection</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/HAWC_30_Dor.ipynb.txt" rel="nofollow"> View page source</a>
       </li>
@@ -366,8 +363,8 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<section id="HAWC+-Data-Recipe-/-30-Doradus-Data-Release">
-<h1>HAWC+ Data Recipe / 30 Doradus Data Release<a class="headerlink" href="#HAWC+-Data-Recipe-/-30-Doradus-Data-Release" title="Permalink to this headline"></a></h1>
+<section id="HAWC+-Data-Inspection">
+<h1>HAWC+ Data Inspection<a class="headerlink" href="#HAWC+-Data-Inspection" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p><strong>Aim</strong>: Basic inspection and analysis.</p></li>
 <li><p><strong>Data</strong>: Level 4 imaging polarimetry data for 30 Dor</p></li>
@@ -10963,8 +10960,8 @@ INFO: Auto-setting vmax to  1.171e-01 [aplpy.core]
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="FORCAST-Grism_CustomExtraction-3.html" class="btn btn-neutral float-left" title="FORCAST Grism Spectra: Custom Spectral Extraction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="EXES-Data-Inspection.html" class="btn btn-neutral float-right" title="EXES: Data inspection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="hawc%2B.html" class="btn btn-neutral float-left" title="HAWC+" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="exes.html" class="btn btn-neutral float-right" title="EXES" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
