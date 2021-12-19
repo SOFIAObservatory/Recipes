@@ -31,7 +31,7 @@ Tutorials
 +---------------------------------------+------------------------------------------------------------------------+
 | **Python**                            | **Description**                                                        |
 +---------------------------------------+------------------------------------------------------------------------+
-| `FORCAST: Basic Photometry`_          | *Aim*: Simple aperture photometry and uncertainty calculation.         |
+| `FORCAST: Basic Photometry`_          | *Aim*: Simple aperture photometry and uncertainty.                     |
 |                                       |                                                                        |
 |                                       | *Tools*: astropy, photutils                                            |
 +---------------------------------------+------------------------------------------------------------------------+
