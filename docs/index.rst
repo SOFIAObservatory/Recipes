@@ -85,13 +85,11 @@ suggestions on these notebooks through a new Github
 .. |Python package| image:: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
 
-Additional Links
-******************
-
 .. toctree::
+  :caption: Python Tutorials
+  :hidden:
   :maxdepth: 1
 
-  SOFIA_data_retrieval.ipynb
   FORCAST-Basic_Photometry.ipynb
   FORCAST-photometry_detailed.ipynb
   FORCAST-Grism_Inspection-1.ipynb
@@ -99,5 +97,12 @@ Additional Links
   FORCAST-Grism_CustomExtraction-3.ipynb
   HAWC_30_Dor.ipynb
   EXES-Data-Inspection.ipynb
+
+.. toctree::
+  :caption: Other Tutorials
+  :hidden:
+  :maxdepth: 1
+
+  SOFIA_data_retrieval.ipynb
   FIFI-LS_sospex.ipynb
   GREAT-Class_primer.ipynb
