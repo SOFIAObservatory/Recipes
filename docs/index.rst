@@ -3,7 +3,7 @@ SOFIA DATA Analysis Tutorials
 
 |Python package|
 
-**Aim**: These documents provide simple “recipes” (i.e., descriptions
+**Aim**: These documents provide simple tutorials (i.e., descriptions
 and guided examples) for common data analysis objectives using SOFIA
 processed data.
 
@@ -19,6 +19,8 @@ SOFIA handbooks, please contact us at the sofia_help@sofia.usra.edu.
 **Feedback**: We also encourage you to submit any comments or
 suggestions on these notebooks through a new Github
 “`Issue <https://github.com/SOFIAObservatory/Recipes/issues/new/choose>`__”.
+
+**Contribute**: If you have some code that you think other SOFIA users might be interested in, please contact us!!!
 
 **Resources**: `SOFIA Data Handbooks <https://www.sofia.usra.edu/science/proposing-and-observing/data-products/data-resources>`__, `Github repository <https://github.com/SOFIAObservatory/Recipes>`__
 
