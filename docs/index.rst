@@ -51,7 +51,15 @@ Tutorials
 |                                           |                                                                        |
 |                                           | *Tools*: astropy                                                       |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `EXES: Data Inspection`_                  | *Aim*: Basic inspection and plotting spectra                           |
+| `EXES: Data Inspection`_                  | *Aim*: Basic inspection and plotting spectra.                          |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy                                                       |
++-------------------------------------------+------------------------------------------------------------------------+
+| `EXES: Telluric Correction`_              | *Aim*: Model and remove atmosphere using PSG model.                    |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy, PSG                                                  |
++-------------------------------------------+------------------------------------------------------------------------+
+| `GREAT: Data Inspection (python)`_        | *Aim*: How to view GREAT spectra.                                      |
 |                                           |                                                                        |
 |                                           | *Tools*: astropy                                                       |
 +-------------------------------------------+------------------------------------------------------------------------+
@@ -67,7 +75,7 @@ Tutorials
 |                                           |                                                                        |
 |                                           | *Tools*: SOSPEX                                                        |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `GREAT: Data Inspection`_                 | *Aim*: How to view GREAT spectra.                                      |
+| `GREAT: Data Inspection (CLASS)`_         | *Aim*: How to view GREAT spectra.                                      |
 |                                           |                                                                        |
 |                                           | *Tools*: CLASS                                                         |
 +-------------------------------------------+------------------------------------------------------------------------+
@@ -79,9 +87,11 @@ Tutorials
 .. _`FORCAST: Grism Custom Extraction`: FORCAST-Grism_CustomExtraction-3.html
 .. _`HAWC+: Data Inspection`: HAWC_30_Dor.html
 .. _`EXES: Data Inspection`: EXES-Data-Inspection.ipynb
+.. _`EXES: Telluric Correction`: EXES-Telluric-Correction.ipynb
 .. _`SOFIA: data retrieval`: SOFIA_data_retrieval.html
 .. _`FIFI-LS: Cube Analysis`: FIFI-LS_sospex.ipynb
-.. _`GREAT: Data Inspection`: GREAT-Class_primer.ipynb
+.. _`GREAT: Data Inspection (CLASS)`: GREAT-Class_primer.ipynb
+.. _`GREAT: Data Inspection (python)`: GREAT-data-inspection.ipynb
 
 .. |Python package| image:: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
