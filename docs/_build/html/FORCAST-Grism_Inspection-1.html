@@ -400,8 +400,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># Imports</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">numpy.ma</span> <span class="k">as</span> <span class="nn">ma</span>
 <span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
 <span class="kn">from</span> <span class="nn">astropy</span> <span class="kn">import</span> <span class="n">constants</span> <span class="k">as</span> <span class="n">const</span>
@@ -420,8 +419,10 @@ div.rendered_html tbody tr:hover {
 <ol class="arabic simple">
 <li><p>Level 3 (flux calibrated) FORCAST grism data (either CAL or CMB files) from the Infrared Science Archive (<a class="reference external" href="https://irsa.ipac.caltech.edu/Missions/sofia.html">IRSA</a>)</p></li>
 <li><p>Sample Data (if desired): For the examples in this recipe, we use the calibrated data for AB Aur from program 05_0138 (PI: Shuping), flight 434. The dataset consists of four LEVEL 3 CMB files, one file for each grism setting (G063, G111, G227, and G329), which can be downloaded from the IRSA using the following search parameters: - Coordinates or Object Name = AB Aur - Radius = 100 arcseconds - MissionID = 2017-09-27_FO_F434 - PlanID = 05_0138 - Instrument = FORCAST - Configuration = Low
-Resolution Spectroscopy - Processing State = LEVEL 3 The four files should be saved with their original names in a folder named “forcast-sample-data” in the same directory as this Python Notebook: - forcast-sample-data/F0434_FO_GRI_0501381_FORG063_CMB_0228-0229.fits - forcast-sample-data/F0434_FO_GRI_0501382_FORG111_CMB_0234-0238.fits - forcast-sample-data/F0434_FO_GRI_0501383_FORG227_CMB_0230-0233.fits - forcast-sample-data/F0434_FO_GRI_0501384_FORG329_CMB_0239-0246.fits <strong>You can download
-the example data directly</strong><a class="reference external" href="https://zenodo.org/record/5706312/files/FORCAST-Grism_Inspection-example-data.zip?download=1">here</a>.</p></li>
+Resolution Spectroscopy - Processing State = LEVEL 3 The four files should be saved with their original names in a folder named “forcast-sample-data” in the same directory as this Python Notebook: - forcast-sample-data/F0434_FO_GRI_0501381_FORG063_CMB_0228-0229.fits - forcast-sample-data/F0434_FO_GRI_0501382_FORG111_CMB_0234-0238.fits - forcast-sample-data/F0434_FO_GRI_0501383_FORG227_CMB_0230-0233.fits - forcast-sample-data/F0434_FO_GRI_0501384_FORG329_CMB_0239-0246.fits</p></li>
+</ol>
+<p><strong>You can download the example data directly</strong><a class="reference external" href="https://zenodo.org/record/5706312/files/FORCAST-Grism_Inspection-example-data.zip?download=1">here</a>.</p>
+<ol class="arabic simple" start="3">
 <li><p><a class="reference external" href="https://www.sofia.usra.edu/sites/default/files/USpot_DCS_DPS/Documents/FORCAST_data_handbook.pdf">FORCAST GO Handbook</a> for reference (latest version can be found on the <a class="reference external" href="https://www.sofia.usra.edu/data/data-processing-0#DataHandbooks">SOFIA Data Products</a> page.)</p></li>
 </ol>
 </section>

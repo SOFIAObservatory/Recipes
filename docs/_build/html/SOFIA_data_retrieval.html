@@ -48,6 +48,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#Goals:">Goals:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Downloading-HAWC+-Data">Downloading HAWC+ Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Data-levels">Data levels</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#SOFIA-Data-Organization">SOFIA Data Organization</a></li>
 </ul>
 </li>
@@ -167,6 +168,17 @@
 </ul>
 <img alt="ISRA Search Results" src="_images/isra_results.png" />
 <p>The results will show files (fits) including descriptions of the file metadata. Included in this metadata is the “Quality Assurance” comments (shown with the red ellipse) with specific notes from the instrument scientists during the observations. These include notes about data quality, observing complications, and if the observations was an aquisition observations.</p>
+</section>
+<section id="Data-levels">
+<h2>Data levels<a class="headerlink" href="#Data-levels" title="Permalink to this headline"></a></h2>
+<p>Currently, there are five levels of SOFIA data products:</p>
+<ul class="simple">
+<li><p>Level 0: raw SI data in standardized format (HAWC+ only)</p></li>
+<li><p>Level 1: raw SI data in standardized format (FITS); for HAWC+, the demodulated (chop and nod subtracted) data comprise Level 1</p></li>
+<li><p>Level 2: data corrected for instrument artifacts (e.g. flat-fielded, dark-subtracted, bad pixels removed)</p></li>
+<li><p>Level 3: flux calibrated and telluric corrected data (using FITS keywords; Jy/pix)</p></li>
+<li><p>Level 4: Level 4 data products comprise everything beyond flux calibrated (Level 3) products. Any data product generated from the combination of Level 3 files (e.g., a map or a mosaic) is considered a Level 4 product. For most instruments, Level 4 data products are usually generated from observations obtained across multiple flights or even multiple flight series and observing cycles. For HAWC+ nod-pol observations, the data product that includes the polarization vectors is Level 4.</p></li>
+</ul>
 </section>
 <section id="SOFIA-Data-Organization">
 <h2>SOFIA Data Organization<a class="headerlink" href="#SOFIA-Data-Organization" title="Permalink to this headline"></a></h2>

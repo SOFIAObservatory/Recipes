@@ -51,7 +51,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">FIFI-LS: Basic Cube Analysis using SOSPEX</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#Goals">Goals</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Ingredients:">Ingredients:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Ingredients">Ingredients</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Inspecting-the-Cube">Inspecting the Cube</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Comparing-to-a-Reference-Image">Comparing to a Reference Image</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Reference-Velocity-and-Redshift">Reference Velocity and Redshift</a></li>
@@ -127,15 +127,21 @@
 <section id="Goals">
 <h2>Goals<a class="headerlink" href="#Goals" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p>Inspect FIFI-LS data with SOSPEX</p></li>
+<li><p>Inspect FIFI-LS data with SOSPEX.</p></li>
+<li><p>Compare the data with reference image.</p></li>
+<li><p>Set a reference velocity.</p></li>
+<li><p>Remove unwanted data.</p></li>
+<li><p>Select data within an elliptial region.</p></li>
+<li><p>Fit and subtract an contiuum.</p></li>
+<li><p>Calculate line intensities.</p></li>
 </ul>
 </section>
 <section id="Introduction">
 <h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
-<p>This recipe is a beginner’s introduction to plotting FIFI-LS data</p>
+<p><code class="docutils literal notranslate"><span class="pre">sospex</span></code> is a GUI tool designed to display and analyse SOFIA (FIFI-LS and GREAT) and Herschel (PACS) spectral cubes. This recipe is a beginner’s introduction to several basic tasks in <code class="docutils literal notranslate"><span class="pre">sospex</span></code> including inspecting and manipulating FIF-LS data.</p>
 </section>
-<section id="Ingredients:">
-<h2>Ingredients:<a class="headerlink" href="#Ingredients:" title="Permalink to this headline"></a></h2>
+<section id="Ingredients">
+<h2>Ingredients<a class="headerlink" href="#Ingredients" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p>Download and install <a class="reference external" href="https://github.com/darioflute/sospex/blob/master/README.md">SOSPEX</a> from github</p></li>
 <li><p>Download your <em>Level 4</em> (fully resampled, “WXY”) data from the Infrared Science Archive (<a class="reference external" href="https://irsa.ipac.caltech.edu/Missions/sofia.html">IRSA</a>).</p></li>

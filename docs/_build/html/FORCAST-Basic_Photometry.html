@@ -46,9 +46,9 @@
 <li class="toctree-l1"><a class="reference internal" href="general.html">General</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="forcast.html">FORCAST</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">FORCAST Basic photometry</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#Introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Goals">Goals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Import-packages">Import packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Imports">Imports</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Load-data">Load data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Get-aperture-radius-sum">Get aperture radius sum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Define-background-annulus">Define background annulus</a></li>
@@ -374,21 +374,22 @@ div.rendered_html tbody tr:hover {
 <li><p><strong>Documentation</strong>: <a class="reference external" href="https://www.sofia.usra.edu/sites/default/files/USpot_DCS_DPS/Documents/FORCAST_data_handbook.pdf">FORCAST data handbook</a></p></li>
 <li><p><strong>Notebook repository</strong>: <a class="reference external" href="https://github.com/SOFIAObservatory/Recipes">https://github.com/SOFIAObservatory/Recipes</a></p></li>
 </ul>
-<section id="Introduction">
-<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
-<p>This turotial will go through the basic process of aperture photometry for a single source. For a more in-depth description of each of these steps refer to the <a class="reference external" href="FORCAST_Photometry.pdf">FORCAST photometry tutorial</a> pdf. The data used are Level 3 flux calibrated imaging data for a <a class="reference external" href="https://www.stsci.edu/hst/proposing/approved-programs/hst-sofia">public dataset</a> targeting the Symbiotic Mira, HM Sge, in FORCAST’s 5.6um filter. Access to this, and other, data can be found at the Infrared
-Science Archive <a class="reference external" href="https://irsa.ipac.caltech.edu/Missions/sofia.html">(IRSA)</a>. For further instructions on this process refer to the FORCAST data handbook referenced above.</p>
-</section>
 <section id="Goals">
 <h2>Goals<a class="headerlink" href="#Goals" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p>Determine the sum of the flux within an aperture .</p></li>
-<li><p>Determin the sum of flux within a larger annulus for background determination.</p></li>
+<li><p>Determine the sum of flux within a larger annulus for background determination.</p></li>
 <li><p>Subtract background flux.</p></li>
+<li><p>Calculate uncertainty.</p></li>
 </ul>
 </section>
-<section id="Import-packages">
-<h2>Import packages<a class="headerlink" href="#Import-packages" title="Permalink to this headline"></a></h2>
+<section id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
+<p>This turotial will go through the basic process of aperture photometry for a single source using <code class="docutils literal notranslate"><span class="pre">python</span></code> and <code class="docutils literal notranslate"><span class="pre">astropy</span></code>. For a more in-depth description of each of these steps refer to the <code class="docutils literal notranslate"><span class="pre">FORCAST</span> <span class="pre">photometry</span> <span class="pre">(detailed)</span></code> tutorial. The data used are Level 3 flux calibrated imaging data for a <a class="reference external" href="https://www.stsci.edu/hst/proposing/approved-programs/hst-sofia">public dataset</a> targeting the Symbiotic Mira, HM Sge, in FORCAST’s 5.6 <span class="math notranslate nohighlight">\(\mu\)</span>m filter. Access to this, and other, data can be
+found at the Infrared Science Archive <a class="reference external" href="https://irsa.ipac.caltech.edu/Missions/sofia.html">(IRSA)</a>. For further instructions on this process refer to the FORCAST data handbook referenced above.</p>
+</section>
+<section id="Imports">
+<h2>Imports<a class="headerlink" href="#Imports" title="Permalink to this headline"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -405,6 +406,7 @@ Science Archive <a class="reference external" href="https://irsa.ipac.caltech.ed
     <span class="n">CircularAnnulus</span><span class="p">,</span>
     <span class="n">aperture_photometry</span><span class="p">,</span>
 <span class="p">)</span>
+
 <span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 </div>
@@ -437,7 +439,8 @@ WARNING: FITSFixedWarning: &#39;datfix&#39; made the change &#39;Set MJD-OBS to 
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">hdr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">30</span><span class="p">]</span>
+<span></span><span class="c1"># print first 30 rows</span>
+<span class="n">hdr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">30</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -522,9 +525,11 @@ CREATOR = &#39;foracq 1.10.0 Feb 23 2021 12:25:32&#39; / acquisition software
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># get position in SkyCoord format</span>
 <span class="n">pos</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="p">(</span><span class="n">target_ra</span><span class="p">,</span> <span class="n">target_dec</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">hourangle</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">))</span>
+
 <span class="c1"># convert to pixels within data</span>
 <span class="n">pos_pix</span> <span class="o">=</span> <span class="n">pos</span><span class="o">.</span><span class="n">to_pixel</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-<span class="c1"># determin sum flux</span>
+
+<span class="c1"># determin sum flux at pixel position and with aperature radius: r_ap</span>
 <span class="n">sum_jy</span><span class="p">,</span> <span class="n">pix_aperture</span> <span class="o">=</span> <span class="n">get_aperture_sum</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">pos_pix</span><span class="p">,</span> <span class="n">r_ap</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -533,18 +538,20 @@ CREATOR = &#39;foracq 1.10.0 Feb 23 2021 12:25:32&#39; / acquisition software
 <section id="Define-background-annulus">
 <h2>Define background annulus<a class="headerlink" href="#Define-background-annulus" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># get WCS information of data</span>
 <span class="n">w</span> <span class="o">=</span> <span class="n">WCS</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+
 <span class="c1"># define background annulus of similar center and specified radii</span>
 <span class="n">annulus_aperture</span> <span class="o">=</span> <span class="n">CircularAnnulus</span><span class="p">(</span>
     <span class="n">pos_pix</span><span class="p">,</span>
     <span class="n">r_in</span><span class="o">=</span><span class="n">background_aperture_inner_radius</span><span class="p">,</span>
     <span class="n">r_out</span><span class="o">=</span><span class="n">background_aperture_outter_radius</span><span class="p">,</span>
 <span class="p">)</span>
+
 <span class="c1"># plot aperture and annulus</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;gray_r&quot;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s2">&quot;lower&quot;</span><span class="p">)</span>
 <span class="n">pix_aperture</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -560,22 +567,14 @@ CREATOR = &#39;foracq 1.10.0 Feb 23 2021 12:25:32&#39; / acquisition software
 WARNING: FITSFixedWarning: &#39;datfix&#39; made the change &#39;Set MJD-OBS to 59396.259012 from DATE-OBS&#39;. [astropy.wcs.wcs]
 </pre></div></div>
 </div>
-<div class="nboutput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-(&lt;matplotlib.patches.PathPatch at 0x7fc77febe430&gt;,)
-</pre></div></div>
-</div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/FORCAST-Basic_Photometry_13_2.png" src="_images/FORCAST-Basic_Photometry_13_2.png" />
+<img alt="_images/FORCAST-Basic_Photometry_13_1.png" src="_images/FORCAST-Basic_Photometry_13_1.png" />
 </div>
 </div>
+<p>Two other white artifacts can also be seen in this image. These are artifacts of the stacking and the specific merging procedure and should not be used for further anaylsis.</p>
 </section>
 <section id="Calculate-and-subtract-background-flux">
 <h2>Calculate and subtract background flux<a class="headerlink" href="#Calculate-and-subtract-background-flux" title="Permalink to this headline"></a></h2>
@@ -586,10 +585,13 @@ WARNING: FITSFixedWarning: &#39;datfix&#39; made the change &#39;Set MJD-OBS to 
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># determine flux sum within background annulus</span>
 <span class="n">bkg_results</span> <span class="o">=</span> <span class="n">aperture_photometry</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">annulus_aperture</span><span class="p">)</span>
+
 <span class="c1"># determine flux average in background annulus</span>
 <span class="n">bkg_mean</span> <span class="o">=</span> <span class="n">bkg_results</span><span class="p">[</span><span class="s2">&quot;aperture_sum&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">annulus_aperture</span><span class="o">.</span><span class="n">area</span>
+
 <span class="c1"># subtract background average from flux sum within aperture.</span>
 <span class="n">f0</span> <span class="o">=</span> <span class="n">sum_jy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">bkg_mean</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Flux removed: &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="si">{:.6f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">bkg_mean</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; Jy&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;background_substracted flux: &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="si">{:.6f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">f0</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; Jy&quot;</span><span class="p">)</span>
 </pre></div>
@@ -608,43 +610,38 @@ background_substracted flux: 52.810753 Jy
 <section id="Calculate-uncertainty">
 <h2>Calculate uncertainty<a class="headerlink" href="#Calculate-uncertainty" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># create annulus mask from previous created annulus aperture</span>
 <span class="n">annulus_mask</span> <span class="o">=</span> <span class="n">annulus_aperture</span><span class="o">.</span><span class="n">to_mask</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
+
 <span class="c1"># applying mask to data</span>
 <span class="n">annulus_data</span> <span class="o">=</span> <span class="n">annulus_mask</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
 <span class="c1"># calculating standard deviation within background annulus</span>
 <span class="n">annulus_std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">annulus_data</span><span class="p">)</span>
+
 <span class="c1"># plotting data</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">annulus_data</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="nboutput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fc78010d3d0&gt;
-</pre></div></div>
-</div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/FORCAST-Basic_Photometry_17_1.png" src="_images/FORCAST-Basic_Photometry_17_1.png" />
+<img alt="_images/FORCAST-Basic_Photometry_18_0.png" src="_images/FORCAST-Basic_Photometry_18_0.png" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># calculating absolute uncertainty</span>
+<span></span><span class="c1"># calculating absolute uncertainty.</span>
+<span class="c1"># Details for this calculation can be found in the FORCAST photometry (detailed) notebook</span>
 <span class="n">sigma_m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span>
     <span class="p">(</span>
         <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="p">(</span><span class="n">r_ap</span> <span class="o">*</span> <span class="n">annulus_std</span> <span class="o">/</span> <span class="n">f0</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
@@ -683,15 +680,6 @@ background_substracted flux: 52.810753 Jy
 <div class="highlight"><pre>
 (5.6 um): 52.810753 +/- 0.055915 Jy
 </pre></div></div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
 </div>
 </section>
 </section>

@@ -5,7 +5,7 @@
    "id": "edda6f99",
    "metadata": {},
    "source": [
-    "GREAT: Class primer\n",
+    "GREAT: Class Primer\n",
     "================\n",
     "* **Aim**: Load GREAT spectrum and complete basic baseline subtraction. <br />\n",
     "* **Data**: Level 3 data. <br />\n",
@@ -261,14 +261,6 @@
     "\n",
     "Now that you have cooked this simple recipe, you should be able to expand and make the spectra you and your colleagues have been dreaming of. To get some more ideas, look at the class script in the tar file for the full reduction script that was used in generating the products and for comments and examples of how to do things with GREAT data in class."
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "1a5955bf",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

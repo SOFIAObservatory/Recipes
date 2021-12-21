@@ -28,60 +28,60 @@ suggestions on these notebooks through a new Github
 Tutorials
 ---------
 
-+---------------------------------------+------------------------------------------------------------------------+
-| **Python**                            | **Description**                                                        |
-+---------------------------------------+------------------------------------------------------------------------+
-| `FORCAST: Basic Photometry`_          | *Aim*: Simple aperture photometry and uncertainty.                     |
-|                                       |                                                                        |
-|                                       | *Tools*: astropy, photutils                                            |
-+---------------------------------------+------------------------------------------------------------------------+
-| `FORCAST: Grism Inspection`_          | *Aim*: Inspection of FORCAST grism data.                               |
-|                                       |                                                                        |
-|                                       | *Tools*: astropy, DS9                                                  |
-+---------------------------------------+------------------------------------------------------------------------+
-| `FORCAST: Grism Line Analysis`_       | *Aim*: Basic line fluxes and line fitting of grism data.               |
-|                                       |                                                                        |
-|                                       | *Tools*: astropy                                                       |
-+---------------------------------------+------------------------------------------------------------------------+
-| `FORCAST: Grism Custom Extraction`_   | *Aim*: Extract grism data with a user-defined aperture.                |
-|                                       |                                                                        |
-|                                       | *Tools*: astropy                                                       |
-+---------------------------------------+------------------------------------------------------------------------+
-| `HAWC+ Data Inspection`_              | *Aim*: Basic inspection and analysis.                                  |
-|                                       |                                                                        |
-|                                       | *Tools*: astropy                                                       |
-+---------------------------------------+------------------------------------------------------------------------+
-| `EXES: Data Inspection`_              | *Aim*: Basic inspection and plotting spectra                           |
-|                                       |                                                                        |
-|                                       | *Tools*: astropy                                                       |
-+---------------------------------------+------------------------------------------------------------------------+
-|                                       |                                                                        |
-+---------------------------------------+------------------------------------------------------------------------+
-| **Other**                             | **Description**                                                        |
-+---------------------------------------+------------------------------------------------------------------------+
-| `SOFIA data retrieval`_               | *Aim*: Download SOFIA data through the IRSA.                           |
-+---------------------------------------+------------------------------------------------------------------------+
-| `FORCAST: Photometry (detailed)`_     | *Aim*: Detailed description of aperture photometry.                    |
-+---------------------------------------+------------------------------------------------------------------------+
-| `FIFI-LS`_                            | *Aim*: Basic cube analysis.                                            |
-|                                       |                                                                        |
-|                                       | *Tools*: SOSPEX                                                        |
-+---------------------------------------+------------------------------------------------------------------------+
-| `GREAT`_                              | *Aim*: How to view GREAT spectra.                                      |
-|                                       |                                                                        |
-|                                       | *Tools*: CLASS                                                         |
-+---------------------------------------+------------------------------------------------------------------------+
++-------------------------------------------+------------------------------------------------------------------------+
+| **Python**                                | **Description**                                                        |
++-------------------------------------------+------------------------------------------------------------------------+
+| `FORCAST: Basic Photometry`_              | *Aim*: Simple aperture photometry and uncertainty.                     |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy, photutils                                            |
++-------------------------------------------+------------------------------------------------------------------------+
+| `FORCAST: Grism Inspection`_              | *Aim*: Inspection of FORCAST grism data.                               |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy, DS9                                                  |
++-------------------------------------------+------------------------------------------------------------------------+
+| `FORCAST: Grism Line Analysis`_           | *Aim*: Basic line fluxes and line fitting of grism data.               |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy                                                       |
++-------------------------------------------+------------------------------------------------------------------------+
+| `FORCAST: Grism Custom Extraction`_       | *Aim*: Extract grism data with a user-defined aperture.                |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy                                                       |
++-------------------------------------------+------------------------------------------------------------------------+
+| `HAWC+: Data Inspection`_                 | *Aim*: Basic inspection and analysis.                                  |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy                                                       |
++-------------------------------------------+------------------------------------------------------------------------+
+| `EXES: Data Inspection`_                  | *Aim*: Basic inspection and plotting spectra                           |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy                                                       |
++-------------------------------------------+------------------------------------------------------------------------+
+|                                           |                                                                        |
++-------------------------------------------+------------------------------------------------------------------------+
+| **Other**                                 | **Description**                                                        |
++-------------------------------------------+------------------------------------------------------------------------+
+| `SOFIA: data retrieval`_                  | *Aim*: Download SOFIA data through the IRSA.                           |
++-------------------------------------------+------------------------------------------------------------------------+
+| `FORCAST: Photometry (detailed)`_         | *Aim*: Detailed description of aperture photometry.                    |
++-------------------------------------------+------------------------------------------------------------------------+
+| `FIFI-LS: Cube Analysis`_                 | *Aim*: Basic cube analysis.                                            |
+|                                           |                                                                        |
+|                                           | *Tools*: SOSPEX                                                        |
++-------------------------------------------+------------------------------------------------------------------------+
+| `GREAT: Data Inspection`_                 | *Aim*: How to view GREAT spectra.                                      |
+|                                           |                                                                        |
+|                                           | *Tools*: CLASS                                                         |
++-------------------------------------------+------------------------------------------------------------------------+
 
 .. _`FORCAST: Basic Photometry`: FORCAST-Basic_Photometry.html
 .. _`FORCAST: Photometry (detailed)`: FORCAST-photometry_detailed.ipynb
 .. _`FORCAST: Grism Inspection`: FORCAST-Grism_Inspection-1.html
 .. _`FORCAST: Grism Line Analysis`: FORCAST-Grism_LineAnalysis-2.html
 .. _`FORCAST: Grism Custom Extraction`: FORCAST-Grism_CustomExtraction-3.html
-.. _`HAWC+ Data Inspection`: HAWC_30_Dor.html
+.. _`HAWC+: Data Inspection`: HAWC_30_Dor.html
 .. _`EXES: Data Inspection`: EXES-Data-Inspection.ipynb
-.. _`SOFIA data retrieval`: SOFIA_data_retrieval.html
-.. _FIFI-LS: FIFI-LS_sospex.ipynb
-.. _GREAT: GREAT-Class_primer.ipynb
+.. _`SOFIA: data retrieval`: SOFIA_data_retrieval.html
+.. _`FIFI-LS: Cube Analysis`: FIFI-LS_sospex.ipynb
+.. _`GREAT: Data Inspection`: GREAT-Class_primer.ipynb
 
 .. |Python package| image:: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
