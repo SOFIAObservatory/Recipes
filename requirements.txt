@@ -6,3 +6,4 @@ pytest-check-links==0.6.0
 photutils==1.2.0
 nbsphinx
 ipywidgets
+spectral_cube
