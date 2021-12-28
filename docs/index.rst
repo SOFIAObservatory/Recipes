@@ -1,4 +1,4 @@
-SOFIA DATA Analysis Tutorials
+SOFIA DATA Analysis Cookbooks
 =============================
 
 |Python package|
