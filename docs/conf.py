@@ -51,7 +51,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 
-html_logo = "sofia_logo.png"
+html_logo = "sofia_dark_logo.png"
 
 html_theme = 'sphinx_rtd_theme'
 # html_theme = 'basicstrap'
