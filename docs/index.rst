@@ -107,3 +107,15 @@ Tutorials
   exes.rst
   great.rst
   fifi-ls.rst
+
+.. toctree::
+    :caption: Quick Links
+    :hidden:
+    :maxdepth: 1
+
+    Subscribe to Newsletter <https://lp.constantcontactpages.com/su/STazCBu/SOFIA>
+    Quick Guide <https://www.sofia.usra.edu/sites/default/files/Other/Documents/quick_guide.pdf>
+    Proposal Documents <https://www.sofia.usra.edu/proposing-observing/proposal-documents>
+    Current Flight Plans <https://www.sofia.usra.edu/science/proposing-and-observing/flights/cycle-8>
+    Data Archive <https://irsa.ipac.caltech.edu/Missions/sofia.html>
+    Help-Desk <sofia_help@sofia.usra.edu>
