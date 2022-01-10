@@ -22,9 +22,6 @@ suggestions on these notebooks through a new Github
 
 **Contribute**: If you have some code that you think other SOFIA users might be interested in, please contact us!!!
 
-**Resources**: `SOFIA Data Handbooks <https://www.sofia.usra.edu/science/proposing-and-observing/data-products/data-resources>`__, `Github repository <https://github.com/SOFIAObservatory/Recipes>`__
-
-
 Tutorials
 ---------
 
@@ -113,9 +110,7 @@ Tutorials
     :hidden:
     :maxdepth: 1
 
-    Subscribe to Newsletter <https://lp.constantcontactpages.com/su/STazCBu/SOFIA>
-    Quick Guide <https://www.sofia.usra.edu/sites/default/files/Other/Documents/quick_guide.pdf>
-    Proposal Documents <https://www.sofia.usra.edu/proposing-observing/proposal-documents>
-    Current Flight Plans <https://www.sofia.usra.edu/science/proposing-and-observing/flights/cycle-8>
+    SOFIA Data Analysis <https://www.sofia.usra.edu/data/data-analysis>
+    Cookbook Github Repository <https://github.com/SOFIAObservatory/Recipes>
     Data Archive <https://irsa.ipac.caltech.edu/Missions/sofia.html>
     Help-Desk <sofia_help@sofia.usra.edu>
