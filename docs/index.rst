@@ -1,4 +1,4 @@
-SOFIA DATA Analysis Cookbooks
+SOFIA Data Analysis Cookbooks
 =============================
 
 |Python package|
