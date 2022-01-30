@@ -28,10 +28,6 @@ Recipes
 +-------------------------------------------+------------------------------------------------------------------------+
 | **Python**                                | **Description**                                                        |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `FORCAST: Basic Photometry`_              | *Aim*: Simple aperture photometry and uncertainty.                     |
-|                                           |                                                                        |
-|                                           | *Tools*: astropy, photutils                                            |
-+-------------------------------------------+------------------------------------------------------------------------+
 | `FORCAST: Grism Inspection`_              | *Aim*: Inspection of FORCAST grism data.                               |
 |                                           |                                                                        |
 |                                           | *Tools*: astropy, DS9                                                  |
@@ -95,7 +91,7 @@ Recipes
 
 .. toctree::
   :caption: Recipes
-  
+
   :hidden:
   :maxdepth: 1
 
