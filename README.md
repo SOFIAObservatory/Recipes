@@ -2,7 +2,8 @@
 
 [repo]:s-goldman
 
-[![Python package](https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg)](https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml)
+[![Python package](https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg)](https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml) [![Documentation Status](https://readthedocs.org/projects/sofia-data-analysis-cookbooks/badge/?version=latest)](https://sofia-data-analysis-cookbooks.readthedocs.io/en/latest/?badge=latest)
+
 
 **Aim**: Jupyter notebooks are hosted in the docs directory. These documents provide simple "recipes" (i.e., descriptions and guided examples) for common data analysis objectives using SOFIA processed data. The notebooks can be viewed on Readthedocs.
 
