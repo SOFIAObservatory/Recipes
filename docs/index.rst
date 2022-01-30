@@ -3,7 +3,7 @@ SOFIA Data Analysis Cookbooks
 
 |Python package|
 
-**Aim**: These documents provide simple tutorials (i.e., descriptions
+**Aim**: These documents provide simple recipes (i.e., descriptions
 and guided examples) for common data analysis objectives using SOFIA
 processed data.
 
@@ -22,7 +22,7 @@ suggestions on these notebooks through a new Github
 
 **Contribute**: If you have some code that you think other SOFIA users might be interested in, please contact us!!!
 
-Tutorials
+Recipes
 ---------
 
 +-------------------------------------------+------------------------------------------------------------------------+
@@ -94,7 +94,8 @@ Tutorials
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
 
 .. toctree::
-  :caption: Tutorials
+  :caption: Recipes
+  
   :hidden:
   :maxdepth: 1
 
