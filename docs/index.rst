@@ -91,7 +91,6 @@ Recipes
 
 .. toctree::
   :caption: Recipes
-
   :hidden:
   :maxdepth: 1
 
