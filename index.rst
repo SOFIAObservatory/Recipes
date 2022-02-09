@@ -22,6 +22,8 @@ suggestions on these notebooks through a new Github
 
 **Contribute**: If you have some code that you think other SOFIA users might be interested in, please contact us!!!
 
+**Additional resources**: Jupyter notebook `usage and installation`_. More examples of IR data analysis techniques with python can be found on the `JWST example notebooks`_ page.
+
 Recipes
 ---------
 
@@ -73,21 +75,24 @@ Recipes
 |                                           | *Tools*: CLASS                                                         |
 +-------------------------------------------+------------------------------------------------------------------------+
 
-.. _`FORCAST: Basic Photometry`: FORCAST-Basic_Photometry.html
+.. _`FORCAST: Basic Photometry`: FORCAST-Basic_Photometry.ipynb
 .. _`FORCAST: Photometry (detailed)`: FORCAST-photometry_detailed.ipynb
-.. _`FORCAST: Grism Inspection`: FORCAST-Grism_Inspection-1.html
-.. _`FORCAST: Grism Line Analysis`: FORCAST-Grism_LineAnalysis-2.html
-.. _`FORCAST: Grism Custom Extraction`: FORCAST-Grism_CustomExtraction-3.html
-.. _`HAWC+: Data Inspection`: HAWC_30_Dor.html
+.. _`FORCAST: Grism Inspection`: FORCAST-Grism_Inspection.ipynb
+.. _`FORCAST: Grism Line Analysis`: FORCAST-Grism_LineAnalysis.ipynb
+.. _`FORCAST: Grism Custom Extraction`: FORCAST-Grism_CustomExtraction.ipynb
+.. _`HAWC+: Data Inspection`: HAWC_30Dor.ipynb
 .. _`EXES: Data Inspection`: EXES-Data-Inspection.ipynb
 .. _`EXES: Telluric Correction`: EXES-Telluric-Correction.ipynb
-.. _`SOFIA: data retrieval`: SOFIA_data_retrieval.html
+.. _`SOFIA: data retrieval`: SOFIA_data_retrieval.ipynb
 .. _`FIFI-LS: Cube Analysis`: FIFI-LS_sospex.ipynb
 .. _`GREAT: Data Inspection (CLASS)`: GREAT-Class_primer.ipynb
 .. _`GREAT: Data Inspection (python)`: GREAT-data-inspection.ipynb
 
 .. |Python package| image:: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
+
+.. _`JWST example notebooks`: https://jwst-docs.stsci.edu/jwst-post-pipeline-data-analysis/example-jupyter-notebooks-data-analysis-tools
+.. _`usage and installation`: https://jupyter.org/install
 
 .. toctree::
   :caption: Recipes

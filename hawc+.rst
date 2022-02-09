@@ -4,4 +4,4 @@ HAWC+
 .. toctree::
   :maxdepth: 1
 
-  HAWC_30_Dor.ipynb
+  HAWC_30Dor.ipynb
