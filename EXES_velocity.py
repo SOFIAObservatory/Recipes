@@ -1,4 +1,4 @@
-# Adapted from previous scipts by Ed Montiel and ...
+# Adapted from previous scipts by idlastro (https://idlastro.gsfc.nasa.gov/)
 
 __all__ = ["helio2lsr", "vgeo", "jdcnv", "baryvel", "premat"]
 
