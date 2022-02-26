@@ -1,3 +1,5 @@
+# Adapted from previous scipts by Ed Montiel and
+
 __all__ = ["helio2lsr", "vgeo", "jdcnv", "baryvel", "premat"]
 
 
