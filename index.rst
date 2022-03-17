@@ -114,4 +114,4 @@ Recipes
     SOFIA Data Analysis <https://www.sofia.usra.edu/data/data-analysis>
     Cookbook Github Repository <https://github.com/SOFIAObservatory/Recipes>
     Data Archive <https://irsa.ipac.caltech.edu/Missions/sofia.html>
-    Help-Desk <sofia_help@sofia.usra.edu>
+    FAQs <https://sofia-faqs.readthedocs.io/en/latest/>
