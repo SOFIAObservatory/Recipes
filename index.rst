@@ -98,17 +98,6 @@ Recipes
 .. _`JWST example notebooks`: https://jwst-docs.stsci.edu/jwst-post-pipeline-data-analysis/example-jupyter-notebooks-data-analysis-tools
 .. _`usage and installation`: https://jupyter.org/install
 
-.. toctree::
-  :caption: Recipes
-  :hidden:
-  :maxdepth: 1
-
-  general.rst
-  forcast.rst
-  hawc+.rst
-  exes.rst
-  great.rst
-  fifi-ls.rst
 
 .. toctree::
     :caption: Quick Links
@@ -118,4 +107,16 @@ Recipes
     SOFIA Data Analysis <https://www.sofia.usra.edu/data/data-analysis>
     Cookbook Github Repository <https://github.com/SOFIAObservatory/Recipes>
     Data Archive <https://irsa.ipac.caltech.edu/Missions/sofia.html>
-    Help-Desk <sofia_help@sofia.usra.edu>
+    FAQs <https://sofia-faqs.readthedocs.io/en/latest/>
+
+.. toctree::
+   :caption: Recipes
+   :hidden:
+   :maxdepth: 1
+
+   general.rst
+   forcast.rst
+   hawc+.rst
+   exes.rst
+   great.rst
+   fifi-ls.rst
