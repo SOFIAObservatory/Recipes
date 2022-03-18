@@ -6,3 +6,4 @@ EXES
 
   EXES-Data-Inspection.ipynb
   EXES-Telluric-Correction.ipynb
+  EXES-Velocity-Shift.ipynb

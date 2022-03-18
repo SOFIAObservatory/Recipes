@@ -52,7 +52,10 @@ Recipes
 +-------------------------------------------+------------------------------------------------------------------------+
 | `EXES: Telluric Correction`_              | *Aim*: Model and remove atmosphere using PSG model.                    |
 |                                           |                                                                        |
-|                                           | *Tools*: astropy, PSG                                                  |
++-------------------------------------------+------------------------------------------------------------------------+
+| `EXES: Velocity Calculation`_             | *Aim*: Estimate velocity shift of spectral lines.                      |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy                                                       |
 +-------------------------------------------+------------------------------------------------------------------------+
 | `GREAT: Data Inspection (python)`_        | *Aim*: How to view GREAT spectra.                                      |
 |                                           |                                                                        |
@@ -83,6 +86,7 @@ Recipes
 .. _`HAWC+: Data Inspection`: HAWC_30Dor.ipynb
 .. _`EXES: Data Inspection`: EXES-Data-Inspection.ipynb
 .. _`EXES: Telluric Correction`: EXES-Telluric-Correction.ipynb
+.. _`EXES: Velocity Calculation`: EXES-Velocity-Shift.ipynb
 .. _`SOFIA: data retrieval`: SOFIA_data_retrieval.ipynb
 .. _`FIFI-LS: Cube Analysis`: FIFI-LS_sospex.ipynb
 .. _`GREAT: Data Inspection (CLASS)`: GREAT-Class_primer.ipynb
