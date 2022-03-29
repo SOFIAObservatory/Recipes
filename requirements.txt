@@ -4,6 +4,6 @@ specutils==1.4.1
 nbmake==0.5
 pytest-check-links==0.6.0
 photutils==1.2.0
-nbsphinx
-ipywidgets
-spectral_cube
+nbsphinx==0.8.8
+ipywidgets==7.6.5
+spectral_cube==0.6.0

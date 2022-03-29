@@ -15,9 +15,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        # os: [ubuntu-latest, macos-latest]
         os: [ubuntu-latest, macos-latest]
 
-        python-version: [3.8, 3.9]
+        python-version: [3.9]
     name: ${{ matrix.os }} python ${{ matrix.python-version }}
     steps:
       - uses: actions/checkout@v2
@@ -44,3 +45,4 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: pytest *.ipynb --nbmake --overwrite
+        # run: pytest --check-links *.ipynb --nbmake --overwrite
