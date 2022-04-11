@@ -1,3 +1,6 @@
+.. meta::
+   :google-site-verification: 7GOTuZ9YEFx8XNybN4_lipwNKGTEH0p4d_jHfJTO_CQ
+
 SOFIA Data Analysis Cookbooks
 =============================
 
