@@ -1,3 +1,6 @@
+.. meta::
+   :google-site-verification: 7GOTuZ9YEFx8XNybN4_lipwNKGTEH0p4d_jHfJTO_CQ
+
 SOFIA Data Analysis Cookbooks
 =============================
 
@@ -65,6 +68,10 @@ Recipes
 |                                           |                                                                        |
 |                                           | *Tools*: astropy                                                       |
 +-------------------------------------------+------------------------------------------------------------------------+
+| `GREAT: Reproject data to GREAT res.`_    | *Aim*: Reproject other datasets to GREAT pixel map.                    |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy, reproject                                            |
++-------------------------------------------+------------------------------------------------------------------------+
 |                                           |                                                                        |
 +-------------------------------------------+------------------------------------------------------------------------+
 | **Other**                                 | **Description**                                                        |
@@ -95,6 +102,7 @@ Recipes
 .. _`FIFI-LS: Cube Analysis`: FIFI-LS_sospex.ipynb
 .. _`GREAT: Data Inspection (CLASS)`: GREAT-Class_primer.ipynb
 .. _`GREAT: Data Inspection (python)`: GREAT-data-inspection.ipynb
+.. _`GREAT: Reproject data to GREAT res.`: GREAT-reproject-data-to-GREAT-resolution.ipynb
 
 .. |Python package| image:: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
