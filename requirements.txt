@@ -1,4 +1,4 @@
-astropy==4.3.1
+astropy==5.0.0
 aplpy==2.0.2
 specutils==1.7.0
 nbmake==0.5
