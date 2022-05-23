@@ -1,10 +1,9 @@
-astropy==5.0.0
+astropy==4.3.1
 aplpy==2.0.2
 specutils==1.7.0
 nbmake==0.5
 pytest-check-links==0.6.0
-photutils==1.4.0
+photutils==1.2.0
 nbsphinx==0.8.8
 ipywidgets==7.6.5
 spectral_cube==0.6.0
-jdaviz==2.4.0
