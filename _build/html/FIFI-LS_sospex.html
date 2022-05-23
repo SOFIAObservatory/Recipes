@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIFI-LS: Basic Cube Analysis using SOSPEX &mdash; SOFIA cookbooks  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="FIFI-LS" href="fifi-ls.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> SOFIA cookbooks
+            <img src="_static/sofia_dark_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Quick Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.sofia.usra.edu/data/data-analysis">SOFIA Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/SOFIAObservatory/Recipes">Cookbook Github Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://irsa.ipac.caltech.edu/Missions/sofia.html">Data Archive</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://sofia-faqs.readthedocs.io/en/latest/">FAQs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recipes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="general.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="forcast.html">FORCAST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hawc%2B.html">HAWC+</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exes.html">EXES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="great.html">GREAT</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="fifi-ls.html">FIFI-LS</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">FIFI-LS: Basic Cube Analysis using SOSPEX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Goals">Goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Ingredients">Ingredients</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#The-example-dataset-can-be-downloaded-directly-here.">The example dataset can be downloaded directly here.</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#Inspecting-the-Cube">Inspecting the Cube</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Comparing-to-a-Reference-Image">Comparing to a Reference Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Reference-Velocity-and-Redshift">Reference Velocity and Redshift</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Cutting,-Cropping,-and-Masking">Cutting, Cropping, and Masking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Working-with-Apertures">Working with Apertures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Fitting-the-Continuum">Fitting the Continuum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Calculating-Line-Intensity-and-Velocity-Moments">Calculating Line Intensity and Velocity Moments</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SOFIA cookbooks</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="fifi-ls.html">FIFI-LS</a> &raquo;</li>
+      <li>FIFI-LS: Basic Cube Analysis using SOSPEX</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/FIFI-LS_sospex.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="FIFI-LS:-Basic-Cube-Analysis-using-SOSPEX">
+<h1>FIFI-LS: Basic Cube Analysis using SOSPEX<a class="headerlink" href="#FIFI-LS:-Basic-Cube-Analysis-using-SOSPEX" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><strong>Aim</strong>: Load FIFI-LS spectrum and</p></li>
+<li><p><strong>Data</strong>: Level 3 data.</p></li>
+<li><p><strong>Tools</strong>: SOSPEX</p></li>
+<li><p><strong>Instrument</strong>: FIFI-LS</p></li>
+<li><p><strong>Documentation</strong>: <a class="reference external" href="https://www.sofia.usra.edu/sites/default/files/USpot_DCS_DPS/Documents/FIFI-LSDataHandbook.pdf">FIFI-LS data handbook</a></p></li>
+<li><p><strong>Notebook repository</strong>: <a class="reference external" href="https://github.com/SOFIAObservatory/Recipes">https://github.com/SOFIAObservatory/Recipes</a></p></li>
+</ul>
+<section id="Goals">
+<h2>Goals<a class="headerlink" href="#Goals" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Inspect FIFI-LS data with SOSPEX.</p></li>
+<li><p>Compare the data with reference image.</p></li>
+<li><p>Set a reference velocity.</p></li>
+<li><p>Remove unwanted data.</p></li>
+<li><p>Select data within an elliptial region.</p></li>
+<li><p>Fit and subtract an contiuum.</p></li>
+<li><p>Calculate line intensities.</p></li>
+</ul>
+</section>
+<section id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">sospex</span></code> is a GUI tool designed to display and analyse SOFIA (FIFI-LS and GREAT) and Herschel (PACS) spectral cubes. This recipe is a beginner’s introduction to several basic tasks in <code class="docutils literal notranslate"><span class="pre">sospex</span></code> including inspecting and manipulating FIF-LS data.</p>
+</section>
+<section id="Ingredients">
+<h2>Ingredients<a class="headerlink" href="#Ingredients" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Download and install <a class="reference external" href="https://github.com/darioflute/sospex/blob/master/README.md">SOSPEX</a> from github</p></li>
+<li><p>Download your <em>Level 4</em> (fully resampled, “WXY”) data from the Infrared Science Archive (<a class="reference external" href="https://irsa.ipac.caltech.edu/Missions/sofia.html">IRSA</a>).</p></li>
+<li><p>You can also use the following sample data if you just want to explore the capabilities of SOSPEX.</p></li>
+<li><p>Look up resolution for line(s) of interest from FIFI-LS Observers Handbook.</p></li>
+</ul>
+<p>For this example, we will use the [CII] observations of M82 (red channel, ~158 µm).</p>
+<section id="The-example-dataset-can-be-downloaded-directly-here.">
+<h3>The example dataset can be downloaded directly <a class="reference external" href="https://zenodo.org/record/5765197/files/FIFI-LS_example_data.zip?download=1">here</a>.<a class="headerlink" href="#The-example-dataset-can-be-downloaded-directly-here." title="Permalink to this headline"></a></h3>
+<p>Once SOSPEX is started (see README with distribution), a two panel GUI should open with the following buttons in the lower right panel:</p>
+<p><em>File Open, Tutorials, Issues (bug report/feature request/etc), Apertures, Exit, and Status Bar.</em></p>
+<p>Tutorials are available by clicking on the <em>Tutorials</em> button (question mark icon below the right hand panel, on the left) or via <em>Help Tutorials</em> on the menu system. You may want to step through some of the tutorials to familiarize yourself with the GUI.</p>
+</section>
+</section>
+<section id="Inspecting-the-Cube">
+<h2>Inspecting the Cube<a class="headerlink" href="#Inspecting-the-Cube" title="Permalink to this headline"></a></h2>
+<p>Load your cube using <strong>File –&gt; Open Cube</strong> (or the file open button – folder icon below the right hand panel, on the left):</p>
+<img alt="_images/FIFI-LS_Picture1.png" src="_images/FIFI-LS_Picture1.png" />
+<p>The left panel should have three tabs:</p>
+<ul class="simple">
+<li><p><em>F</em>: median flux per spatial pixel over all spectral channels (Jy, with telluric correction)</p></li>
+<li><p><em>:math:`F_{rm U}`</em>: median flux per spatial pixel over all spectral channels (Jy, <em>without</em> telluric correction)</p></li>
+<li><p><em>E</em>: exposure map in seconds per spatial pixel</p></li>
+</ul>
+<p>A set of buttons should appear in the lower part of the left panel which provide quick access to functions available in the main menus at upper left:</p>
+<ul class="simple">
+<li><p>Adjust image levels</p></li>
+<li><p>Choose color map</p></li>
+<li><p>Blink between 2 images</p></li>
+<li><p>Contours</p></li>
+<li><p>Crop the cube</p></li>
+<li><p>Download image from cloud</p></li>
+<li><p>Save image</p></li>
+<li><p>Fit continuum</p></li>
+<li><p>Compute moments</p></li>
+<li><p>Erase a region (masking)</p></li>
+<li><p>Go back to original limits</p></li>
+<li><p>Pan figure</p></li>
+<li><p>Zoom in</p></li>
+</ul>
+<p>In addition, the sky/pixel position and the flux are shown at the lower right for the current cursor location on the left panel.</p>
+<p>Move the cursor around each of the images to get a feel for the total flux and exposure time per pixel, shown in lower right corner of the panel.</p>
+<p>This is also a good time to change the image levels and color map if desired (buttons at lower left corner of panel). In this example, we have reversed the color map from the default.</p>
+<p>The right panel shows the spectral dimension and should have 2 tabs:</p>
+<ul class="simple">
+<li><p><em>All</em>: Total flux as a function of wavelength summed over all spatial pixels.</p></li>
+<li><p><em>Pix</em>: Spectrum of the <em>selected</em> pixel in the image panel.</p></li>
+</ul>
+<p>There should be a set of bottons at the bottom of the right panel as well that provide quick access to common spectroscopic tasks available in the main menu items at the upper left:</p>
+<ul class="simple">
+<li><p>Cut part of cube (in wavelength space)</p></li>
+<li><p>Save current spectrum</p></li>
+<li><p>Draw continuum segments</p></li>
+<li><p>Define a wavelength slice (for moment calculation or display)</p></li>
+<li><p>Resize figure horizontally/vertically</p></li>
+<li><p>Go back to original display</p></li>
+<li><p>Pan figure</p></li>
+<li><p>Zoom in</p></li>
+</ul>
+<p>The spectra include the corrected (blue) and uncorrected (green) flux (<em>F, :math:`F_{rm U}`</em>) as well as the exposure spectrum (yellow; seconds per wavelength bin), and the atmospheric transmission spectrum (red) – smoothed to the FIFI-LS resolution. Also shown are the locations of prominent astrophysical lines (purple).</p>
+<p>In regions of broad and/or relatively weak telluric absorption features, the corrected flux spectrum is expected to be accurate based on experience with both FIFI-LS and FORCAST. Some spectral regions (particularly at 63 µm) contain telluric features that cannot be corrected very well because they are either very sensitive to atmospheric conditions (and hence cannot be accurately modeled by ATRAN post-facto) or very deep and narrow (or both). (See the FIFI-LS data handbook for further
+discussion.) Hence, the uncorrected spectrum is also shown so that the user can assess the telluric correction.</p>
+<p>Switching to the “Pix” tab allows the user to inspect the spectrum at each pixel by moving (click and drag) the highlighted pixel in the left panel:</p>
+<img alt="_images/FIFI-LS_Picture2.png" src="_images/FIFI-LS_Picture2.png" />
+<p>Again, drag the highlighted pixel around the image in order to get a sense of the overall line strength and shape as a function of position across the cube, and especially in regions of interest.</p>
+</section>
+<section id="Comparing-to-a-Reference-Image">
+<h2>Comparing to a Reference Image<a class="headerlink" href="#Comparing-to-a-Reference-Image" title="Permalink to this headline"></a></h2>
+<p>It is often very instructive to compare images in the IR with those at other wavelengths. SOSPEX provides access to some online surveys which can be very useful in understanding the data at longer wavelengths. Use the <em>File –&gt; Import Image</em> function to load a survey image from the list, or one of your own from disk (‘local’ at the top of the Selection window).</p>
+<p>For M82 we have loaded both the WISE Band 1 (3.4 µm) and Pan-STARRS <em>z</em>-band images for comparison. The images are automatically registered with the FIFI-LS cube and displayed in separate tabs in the left panel. You will need to select the tab to view the image:</p>
+<img alt="_images/FIFI-LS_Picture3.png" src="_images/FIFI-LS_Picture3.png" />
+<p>You can then “blink” between any two tabs to better compare the survey image with the FIFI-LS data.</p>
+<p>In the case of M82, the strongest [CII] emission comes from the central part of the galaxy, but by moving the highlighted pixel around (click and drag) you can see that there is significant emission (from the outflow) coming from above and below the plane as well:</p>
+<img alt="_images/FIFI-LS_Picture4.png" src="_images/FIFI-LS_Picture4.png" />
+</section>
+<section id="Reference-Velocity-and-Redshift">
+<h2>Reference Velocity and Redshift<a class="headerlink" href="#Reference-Velocity-and-Redshift" title="Permalink to this headline"></a></h2>
+<p>The reference velocity shown at the top of the spectrum panel is initially set to the central wavelength pixel. To reset the reference wavelength to that of a line of interest, simply click on the line identification (in purple) and select ‘yes’ when asked if you want to update the reference wavelength:</p>
+<img alt="_images/FIFI-LS_Picture5.png" src="_images/FIFI-LS_Picture5.png" />
+<p>The cz value is shown at the bottom of the plot. If the FITS header contains the velocity information from USPOT (newer data only) then this will be entered here automatically, otherwise it will default to zero. A redshift can be applied to the scale by clicking on the cz value; this shifts the velocity scale and the line identification:</p>
+<img alt="_images/FIFI-LS_Picture6.png" src="_images/FIFI-LS_Picture6.png" />
+<p>It’s also possible to move the reference line and determine the resulting redshift by clicking the line identifier (in purple) and dragging to the new position in velocity. In the below example we have set the reference line ([CII]) to the approximate location of the emission peak:</p>
+</section>
+<section id="Cutting,-Cropping,-and-Masking">
+<h2>Cutting, Cropping, and Masking<a class="headerlink" href="#Cutting,-Cropping,-and-Masking" title="Permalink to this headline"></a></h2>
+<p>It is often advantageous to remove parts of the cube which are either not of interest, or that suffer from observation/data reduction artefacts. (We do not recommend, however, removing regions simply because they have low S/N.) For example: in the case of M82, the east (left) side of the cube suffers from artefacts, which can be seen in the total flux and also in the spectra of individual pixels:</p>
+<img alt="_images/FIFI-LS_Picture7.png" src="_images/FIFI-LS_Picture7.png" />
+<p>This corresponds to a region of low exposure as seen in the exposure map:</p>
+<img alt="_images/FIFI-LS_Picture8.png" src="_images/FIFI-LS_Picture8.png" />
+<p>In order to prevent this region from skewing later calculations, we can mask it using the <strong>Erase</strong> tool. In this case we will mask only the region with low exposure coverage. Select <strong>Tools –&gt; Mask part of cube –&gt;</strong> <strong>inside a polygon</strong> (or click the eraser tool at the bottom of the left panel) and then use the cursor to identify the corners of the region:</p>
+<img alt="_images/FIFI-LS_Picture9.png" src="_images/FIFI-LS_Picture9.png" />
+<p>After confirming the region, switch back to the Flux tab to see the results:</p>
+<img alt="_images/FIFI-LS_Picture10.png" src="_images/FIFI-LS_Picture10.png" />
+<p>(One can also simply crop the cube, see the Tutorials for instructions.)</p>
+<p>The spectral dimension of the cube sometimes suffers from edge effects due to the observation and/or poor telluric correction. The spectral edges of the cube can be trimmed using the <strong>Cut</strong> tool. In the M82 case, we will trim the long wavelength edge at about 158.4 µm. Select <strong>File –&gt; Save cube –&gt; Cut</strong> and identify the spectral region to <em>keep</em> by clicking and dragging over a region in wavelength space:</p>
+<img alt="_images/FIFI-LS_Picture11.png" src="_images/FIFI-LS_Picture11.png" />
+<p>After confirming the region, the cut region will be saved to a separate file. Now use <strong>File –&gt; Open Cube</strong> to load the newly created cut and masked cube.</p>
+</section>
+<section id="Working-with-Apertures">
+<h2>Working with Apertures<a class="headerlink" href="#Working-with-Apertures" title="Permalink to this headline"></a></h2>
+<p>It is sometimes desirable to sum over a sub-region or fixed aperture in order to compare with other datasets. In the case of M82 we might want to sum over only the central part of the galaxy, rather than the whole image. Use the <strong>Aperture</strong> tool (button below the right panel or in <strong>Tools –&gt; Select aperture –&gt; Ellipse</strong> to define an elliptical aperture and place it over the central part of the galaxy (note that the initial definition only draws an ellipse with axes in x in y; once the ellipse
+is placed it can be tilted, moved and re-sized as required):</p>
+<img alt="_images/FIFI-LS_Picture12.png" src="_images/FIFI-LS_Picture12.png" />
+<p>The spectrum summed over all pixels in the aperture is now shown in tab “1” in the right panel. The aperture spectrum as well as the aperture can both be exported for comparison to other datasets using the <strong>Save Spectrum</strong> <strong>File –&gt; Save spectrum</strong> or button at the bottom left of the right panel) and <strong>File –&gt; Aperture I/O –&gt; Export</strong> functions (see the Tutorials for additional details). Once finished with the aperture, you can remove it by selecting the aperture and then hitting “d”.</p>
+</section>
+<section id="Fitting-the-Continuum">
+<h2>Fitting the Continuum<a class="headerlink" href="#Fitting-the-Continuum" title="Permalink to this headline"></a></h2>
+<p>Determining the properties of the emission line throughout the cube is done by calculating velocity moments. But before that can be done, the continuum must be fit. Select <strong>Tools –&gt; Fit Continuum –&gt; Define Guess</strong> (or use the <strong>Fit Continuum</strong> button at the bottom left of the right panel) to identify the 2 wavelength regions to use across the cube for continuum fitting. A dialog will pop-up for the continuum parameters:</p>
+<ul class="simple">
+<li><p><strong>Function</strong>: Can be either a “Constant” offset or a linear “Slope”, as appropriate for the data.</p></li>
+<li><p><strong>Boundary</strong>: Set to “Positive” to prevent a constant offset from being below zero, if you know this would be unphysical.</p></li>
+<li><p><strong>Kernel</strong>: This is the spatial kernel (single pixel, 5 pixels in a + shape, 9 pixels in a box) used to determine the flux at each wavelength. Larger kernels provide better S/N for the continuum fit and are usually the best option.</p></li>
+</ul>
+<p>After selecting your parameters (in this example we use Function = “Slope”, Boundary = “None”, and a 9-pixel kernel), use the mouse to identify two regions on the spectrum panel for continuum fitting throughout the cube. <em>This must be done on the “Pix” tab</em>. Use the “All” tab to identify the approximate regions, and then switch to the “Pix” tab to actually select the regions:</p>
+<img alt="_images/FIFI-LS_Picture13.png" src="_images/FIFI-LS_Picture13.png" />
+<p>Then select <strong>Tools –&gt; Fit Continuum –&gt; Fit All Cube</strong> When the fitting is complete, a new tab will appear in the left panel called C<sub>0</sub> which shows the continuum flux at the reference wavelength, and a light blue line is shown in the right hand spectrum panel showing the fitted continuum.</p>
+<img alt="_images/FIFI-LS_Picture14.png" src="_images/FIFI-LS_Picture14.png" />
+<p>If desired, the user can then subtract off the continuum and save the results using <strong>File –&gt; Save cube –&gt; Continuum subtracted</strong> and then open the continuum subtracted cube.</p>
+</section>
+<section id="Calculating-Line-Intensity-and-Velocity-Moments">
+<h2>Calculating Line Intensity and Velocity Moments<a class="headerlink" href="#Calculating-Line-Intensity-and-Velocity-Moments" title="Permalink to this headline"></a></h2>
+<p>Once the continuum is fit, the line intensity and velocity moments can be calculated (see the tutorial for a definitions of the various moments). To select the wavelength region over which to calculate the moments, select <strong>Tools –&gt; Compute moments –&gt; Define slice</strong> Again, this must be done on the “Pix” tab, but it is helpful to use the “All” tab to identify the wavelength region desired.</p>
+<img alt="_images/FIFI-LS_Picture15.png" src="_images/FIFI-LS_Picture15.png" />
+<p>Once the wavelength region has been defined, simple select <strong>Tools –&gt; Compute Moments –&gt; Compute all cube</strong> (note that for larger cubes it may take a minute or so to complete the calculations). When done, a number of new tabs will appear in the left panel: one for each moment, along with velocity and dispersion (which are derived from the M1 and M2 moments respectively). The right hand panel now also shows a model gaussian using the calculated moments overplotted for each pixel. Note that this
+is <em>not a fit</em>, but a model line for comparison. For high S/N lines, the profile should match the model Gaussian fairly closely. However, for weaker lines, the actual profile may be much narrower.</p>
+<img alt="_images/FIFI-LS_Picture16.png" src="_images/FIFI-LS_Picture16.png" />
+<p>The M<sub>0</sub> moment corresponds to the line intensity. The total intensity at each pixel is given in W/m<sup>2</sup>. It is usually desirable to compare the total intensity with the velocity and dispersion maps. The easiest way to do this is to make a contour plot of the intensity, which will then be displayed on all other tabs. With the M<sub>0</sub> map selected, press the <strong>Contour</strong> button at the bottom to generate the default set of contours for the image:</p>
+<img alt="_images/FIFI-LS_Picture17.png" src="_images/FIFI-LS_Picture17.png" />
+<p>(Use the contour tutorial for instructions on how to modify the contour plot, I like to add a few more contour lines to better illustrate any gradients).</p>
+<p>Now switch to the velocity map to compare the velocity field to the line intensity; you will probably want to switch back to linear scaling and perhaps change the color map for the velocity display (both done using the buttons below the left panel). If you click the <strong>Adjust Image Levels</strong> button at the bottom, you can restrict the display to the velocity regions of interest. In the case of M82 we would like to restrict the display to levels around the average velocity:</p>
+<img alt="_images/FIFI-LS_Picture18.png" src="_images/FIFI-LS_Picture18.png" />
+<p>There appears to be a strong gradient in the velocity that bisects the long axis of the line emission: which is what we would expect for an edge-on rotating galaxy. The gradient can also be seen in the spectra at each pixel by dragging the pixel in the left-hand panel along the long axis of the intensity contours:</p>
+<img alt="_images/FIFI-LS_Picture19.png" src="_images/FIFI-LS_Picture19.png" />
+<img alt="_images/FIFI-LS_Picture20.png" src="_images/FIFI-LS_Picture20.png" />
+<p>Switching to the dispersion (σ<sub>V</sub>) tab, we can evaluate the width of the line as a function of position across the map. It is important to look up the resolution of the instrument (see the <a class="reference external" href="https://www.sofia.usra.edu/science/proposing-and-observing/observers-handbook-cycle-7/3-fifi-ls">FIFI-LS section of the Observers Handbook</a>) in order to evaluate the dispersion map. In this case, the resolution of FIFI-LS is approximately R = 1250 at 157.8 µm, which corresponds to a line FWHM of 240
+km/s and thus a dispersion of σ<sub>V</sub> = 102 km/s.</p>
+<img alt="_images/FIFI-LS_Picture21.png" src="_images/FIFI-LS_Picture21.png" />
+<p>As can be seen from the levels, the line widths across the cube are slightly higher than the resolution and hence the line is marginally resolved. (Note that the high values in the northern and southern edges of the cube coincide with regions of low S/N and are suspect.)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="fifi-ls.html" class="btn btn-neutral float-left" title="FIFI-LS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, SOFIA/USRA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
