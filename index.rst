@@ -72,6 +72,10 @@ Recipes
 |                                           |                                                                        |
 |                                           | *Tools*: astropy, reproject                                            |
 +-------------------------------------------+------------------------------------------------------------------------+
+| `GREAT: data visualization`_              | *Aim*: Visualize GREAT datacubes in 2D and 3D.                         |
+|                                           |                                                                        |
+|                                           | *Tools*: astropy, jdaviz/Cubeviz, Glue                                 |
++-------------------------------------------+------------------------------------------------------------------------+
 |                                           |                                                                        |
 +-------------------------------------------+------------------------------------------------------------------------+
 | **Other**                                 | **Description**                                                        |
@@ -103,6 +107,7 @@ Recipes
 .. _`GREAT: Data Inspection (CLASS)`: GREAT-Class_primer.ipynb
 .. _`GREAT: Data Inspection (python)`: GREAT-data-inspection.ipynb
 .. _`GREAT: Reproject data to GREAT res.`: GREAT-reproject-data-to-GREAT-resolution.ipynb
+.. _`GREAT: data visualization`: GREAT_Cubeviz.ipynb
 
 .. |Python package| image:: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml

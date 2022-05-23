@@ -1,6 +1,6 @@
 astropy==4.3.1
 aplpy==2.0.2
-specutils==1.4.1
+specutils==1.7.0
 nbmake==0.5
 pytest-check-links==0.6.0
 photutils==1.2.0
