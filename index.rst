@@ -64,15 +64,15 @@ Recipes
 |                                           |                                                                        |
 |                                           | *Tools*: astropy                                                       |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `GREAT: Data Inspection (python)`_        | *Aim*: How to view GREAT spectra.                                      |
+| `GREAT: Data Inspection (Python)`_        | *Aim*: How to view GREAT spectra.                                      |
 |                                           |                                                                        |
 |                                           | *Tools*: astropy                                                       |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `GREAT: Reproject data to GREAT res.`_    | *Aim*: Reproject other datasets to GREAT pixel map.                    |
+| `GREAT: Reproject Data to GREAT res.`_    | *Aim*: Reproject other datasets to GREAT pixel map.                    |
 |                                           |                                                                        |
 |                                           | *Tools*: astropy, reproject                                            |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `GREAT: data visualization`_              | *Aim*: Visualize GREAT datacubes in 2D and 3D.                         |
+| `GREAT: Data Visualization`_              | *Aim*: Visualize GREAT datacubes in 2D and 3D.                         |
 |                                           |                                                                        |
 |                                           | *Tools*: astropy, jdaviz/Cubeviz, Glue                                 |
 +-------------------------------------------+------------------------------------------------------------------------+
@@ -80,9 +80,9 @@ Recipes
 +-------------------------------------------+------------------------------------------------------------------------+
 | **Other**                                 | **Description**                                                        |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `SOFIA: data retrieval`_                  | *Aim*: Download SOFIA data through the IRSA.                           |
+| `SOFIA: Data Retrieval`_                  | *Aim*: Download SOFIA data through the IRSA.                           |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `FORCAST: Photometry (detailed)`_         | *Aim*: Detailed description of aperture photometry.                    |
+| `FORCAST: Photometry (Detailed)`_         | *Aim*: Detailed description of aperture photometry.                    |
 +-------------------------------------------+------------------------------------------------------------------------+
 | `FIFI-LS: Cube Analysis`_                 | *Aim*: Basic cube analysis.                                            |
 |                                           |                                                                        |
