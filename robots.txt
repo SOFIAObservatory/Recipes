@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /.github/ISSUE_TEMPLATE/
+
+Sitemap: https://sofia-data-analysis-cookbooks.readthedocs.io/en/latest/sitemap.xml
