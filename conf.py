@@ -32,10 +32,15 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.viewcode",
     "sphinx.ext.napoleon",
+    "sphinx_sitemap",
     "recommonmark",
     "nbsphinx",
     # "sphinxjp.themes.basicstrap",
 ]
+
+# for sitemap
+html_baseurl = "https://sofia-data-analysis-cookbooks.readthedocs.io/en/latest/"
+html_extra_path = ["robots.txt"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
