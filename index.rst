@@ -112,7 +112,7 @@ Recipes
 .. |Python package| image:: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
 
-.. _`JWST example notebooks`: https://jwst-docs.stsci.edu/jwst-post-pipeline-data-analysis/example-jupyter-notebooks-data-analysis-tools
+.. _`JWST example notebooks`: https://jwst-docs.stsci.edu/jwst-post-pipeline-data-analysis/data-analysis-example-jupyter-notebooks
 .. _`usage and installation`: https://jupyter.org/install
 
 
