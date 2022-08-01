@@ -27,6 +27,8 @@ suggestions on these notebooks through a new Github
 
 **Additional resources**: Jupyter notebook `usage and installation`_. More examples of IR data analysis techniques with python can be found on the `JWST example notebooks`_ page. For more general python data analysis examples see the `Python Data Science Handbook`_.
 
+**SOFIA School**: The SOFIA School aims to teach new SOFIA users how to reduce their data. Links to talks from our most recent February 2022 meeting can be found `here`_.
+
 Recipes
 ---------
 
@@ -116,6 +118,8 @@ Recipes
 .. _`usage and installation`: https://jupyter.org/install
 
 .. _`Python Data Science Handbook`: https://github.com/jakevdp/PythonDataScienceHandbook?fbclid=IwAR28yUEuY3uJ-IuShD33iPCJ0-MLxDKArEugSlMrfZgxAzh4IFhA4fs7cdI
+
+.. _`here`: https://sofia-school-2022.constantcontactsites.com/schedule-and-talks
 
 .. toctree::
     :caption: Quick Links
