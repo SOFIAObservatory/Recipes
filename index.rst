@@ -25,7 +25,7 @@ suggestions on these notebooks through a new Github
 
 **Contribute**: If you have some code that you think other SOFIA users might be interested in, please contact us!!!
 
-**Additional resources**: Jupyter notebook `usage and installation`_. More examples of IR data analysis techniques with python can be found on the `JWST example notebooks`_ page.
+**Additional resources**: Jupyter notebook `usage and installation`_. More examples of IR data analysis techniques with python can be found on the `JWST example notebooks`_ page. For more general python data analysis examples see the `Python Data Science Handbook`_.
 
 Recipes
 ---------
@@ -115,6 +115,7 @@ Recipes
 .. _`JWST example notebooks`: https://jwst-docs.stsci.edu/jwst-post-pipeline-data-analysis/data-analysis-example-jupyter-notebooks
 .. _`usage and installation`: https://jupyter.org/install
 
+.. _`Python Data Science Handbook`: https://github.com/jakevdp/PythonDataScienceHandbook?fbclid=IwAR28yUEuY3uJ-IuShD33iPCJ0-MLxDKArEugSlMrfZgxAzh4IFhA4fs7cdI
 
 .. toctree::
     :caption: Quick Links
