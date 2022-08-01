@@ -1,5 +1,5 @@
 astropy==5.0.4
-aplpy==2.0.2
+aplpy==2.1.2
 specutils==1.7.0
 nbmake==0.5
 pytest-check-links==0.6.0
