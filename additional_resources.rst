@@ -16,6 +16,7 @@ Data Analysis Talks
 
 * `[link] <https://sofia-school-2022.constantcontactsites.com/schedule-and-talks>`_ SOFIA School February 2022 meeting. The SOFIA School aims to teach new SOFIA users how to reduce their data.
 
+* `[link] <https://www.youtube.com/playlist?list=PLTOSd8OgUP5rOFjS5EZPCHkogHeR5iC1L>`_ JWST data analysis talks (Youtube Channel).
 
 SOFIA User Code
 ===============
