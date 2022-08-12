@@ -11,10 +11,8 @@ and guided examples) for common data analysis objectives using SOFIA
 processed data.
 
 **Skill level**: These are generally written for a graduate student
-audience. Some of the recipes are ``jupyter`` notebooks designed for a
-researcher with a working knowledge of the `numpy/scipy/matplotlib
-stack <https://scipy.org/install.html>`__ as well the
-`astropy <http://docs.astropy.org/en/stable/>`__ modules.
+audience. Some of the recipes are Jupyter notebooks designed for a
+researcher with a working knowledge of the `numpy <https://numpy.org/>`__, `scipy <https://scipy.org/install.html>`__, `matplotlib <https://matplotlib.org/>`__, and `astropy <http://docs.astropy.org/en/stable/>`__. For more general information on these tools see `Jupyter notebooks usage and installation <https://jupyter.org/install>`_ and the `Python Data Science Handbook <https://github.com/jakevdp/PythonDataScienceHandbook?fbclid=IwAR28yUEuY3uJ-IuShD33iPCJ0-MLxDKArEugSlMrfZgxAzh4IFhA4fs7cdI>`_.
 
 **Contact us**: For questions not addressed in these notebooks or the
 SOFIA handbooks, please contact us at the sofia_help@sofia.usra.edu.
@@ -24,6 +22,8 @@ suggestions on these notebooks through a new Github
 “`Issue <https://github.com/SOFIAObservatory/Recipes/issues/new/choose>`__”.
 
 **Contribute**: If you have some code that you think other SOFIA users might be interested in, please contact us!!!
+
+**Additional Resources**: For additional examples of data analysis of infrared data see the `Data Analysis Talks <https://www.youtube.com/playlist?list=PLTOSd8OgUP5rOFjS5EZPCHkogHeR5iC1L>`_ for JWST data.
 
 Recipes
 ---------
@@ -132,4 +132,3 @@ Recipes
    exes.rst
    great.rst
    fifi-ls.rst
-   additional_resources.rst
