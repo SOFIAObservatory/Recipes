@@ -35,6 +35,7 @@ extensions = [
     "sphinx_sitemap",
     "recommonmark",
     "nbsphinx",
+    "sphinxcontrib.video"
     # "sphinxjp.themes.basicstrap",
 ]
 
