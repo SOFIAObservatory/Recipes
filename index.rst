@@ -90,7 +90,7 @@ Recipes
 |                                           |                                                                        |
 |                                           | *Tools*: CLASS                                                         |
 +-------------------------------------------+------------------------------------------------------------------------+
-| `GREAT: Dara Visualization (CARTA)`_      | *Aim*: Visualize GREAT data along X, Y, & Z dimensions.                |
+| `GREAT: Data Visualization (CARTA)`_      | *Aim*: Visualize GREAT data along X, Y, & Z dimensions.                |
 |                                           |                                                                        |
 |                                           | *Tools*: CARTA                                                         |
 +-------------------------------------------+------------------------------------------------------------------------+
@@ -113,7 +113,7 @@ Recipes
 .. _`GREAT: Data Inspection (python)`: GREAT-data-inspection.ipynb
 .. _`GREAT: Reproject data to GREAT res.`: GREAT-reproject-data-to-GREAT-resolution.ipynb
 .. _`GREAT: data visualization`: GREAT_Cubeviz.ipynb
-.. _`GREAT: Dara Visualization (CARTA)`: https://www.youtube.com/watch?v=SJNNvWbzFwU
+.. _`GREAT: Data Visualization (CARTA)`: https://www.youtube.com/watch?v=UFL_2kfFtmw
 
 .. |Python package| image:: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml/badge.svg
    :target: https://github.com/SOFIAObservatory/Recipes/actions/workflows/testing.yml
