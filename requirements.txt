@@ -1,4 +1,4 @@
-astropy==5.0.4
+astropy==5.2.2
 aplpy==2.1.0
 matplotlib==3.4.3
 specutils==1.7.0
