@@ -11,4 +11,4 @@
 **Contributing**: Please contribute! Package uses pytest, testing for the successful execution of each Jupyter notebook, as well as all hyperlinks in repository. To test the package locally using *pytest* use the command: `pytest docs/*.ipynb --nbmake --overwrite --check-links`. To create a local version of the readthedocs site, use the following command in the *docs* directory: `make html`
 
 
-**Resources**: [SOFIA Data Handbooks](https://www.sofia.usra.edu/science/proposing-and-observing/data-products/data-resources), [SOFIA example data repository](https://zenodo.org/record/5835212#.Yd0JGxPMKqk)
+**Resources**: [SOFIA Data Handbooks](https://irsa.ipac.caltech.edu/data/SOFIA/docs/data/data-processing/), [SOFIA example data repository](https://zenodo.org/record/5835212#.Yd0JGxPMKqk)

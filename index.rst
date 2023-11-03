@@ -14,9 +14,6 @@ processed data.
 audience. Some of the recipes are Jupyter notebooks designed for a
 researcher with a working knowledge of the `numpy <https://numpy.org/>`__, `scipy <https://scipy.org/install.html>`__, `matplotlib <https://matplotlib.org/>`__, and `astropy <http://docs.astropy.org/en/stable/>`__. For more general information on these tools see `Jupyter notebooks usage and installation <https://jupyter.org/install>`_ and the `Python Data Science Handbook <https://github.com/jakevdp/PythonDataScienceHandbook?fbclid=IwAR28yUEuY3uJ-IuShD33iPCJ0-MLxDKArEugSlMrfZgxAzh4IFhA4fs7cdI>`_.
 
-**Contact us**: For questions not addressed in these notebooks or the
-SOFIA handbooks, please contact us at the sofia_help@sofia.usra.edu.
-
 **Suggestions**: We also encourage you to submit any comments or
 suggestions on these notebooks through a new Github
 “`Issue <https://github.com/SOFIAObservatory/Recipes/issues/new/choose>`__”.
@@ -124,7 +121,7 @@ Recipes
     :hidden:
     :maxdepth: 1
 
-    SOFIA Data Analysis <https://www.sofia.usra.edu/data/data-analysis>
+    SOFIA Data Analysis <https://irsa.ipac.caltech.edu/data/SOFIA/docs/data/data-analysis/>
     Cookbook Github Repository <https://github.com/SOFIAObservatory/Recipes>
     Data Archive <https://irsa.ipac.caltech.edu/Missions/sofia.html>
     FAQs <https://sofia-faqs.readthedocs.io/en/latest/>
