@@ -124,7 +124,6 @@ Recipes
     SOFIA Data Analysis <https://irsa.ipac.caltech.edu/data/SOFIA/docs/data/data-analysis/>
     Cookbook Github Repository <https://github.com/SOFIAObservatory/Recipes>
     Data Archive <https://irsa.ipac.caltech.edu/Missions/sofia.html>
-    FAQs <https://sofia-faqs.readthedocs.io/en/latest/>
 
 .. toctree::
    :caption: Recipes
